@@ -10,6 +10,17 @@ module.exports = function(options) {
     framework
   } = options;
 
+  const generateImports = () => {
+    if(cdn === 'unpkg') {
+      return `import { React, ReactDOM } from "esm-react";`
+    } else {
+      return `
+    import React from "react";
+    import ReactDOM from "react-dom";
+      `;
+    }
+  }
+
     const markup = `
 <!DOCTYPE html>
 <html lang="en">
@@ -24,12 +35,13 @@ module.exports = function(options) {
   ${generateImportMap(framework,cdn)}
   </script>
   <script type="module-shim">
-    import { h, Component, render }  from "preact";
+  ${generateImports()}
     import htm from "htm";
     import App from './App.js';
-    const html = htm.bind(h);
 
-    render(html\`<\$\{App\} cdn='${cdn}' />\`, document.getElementById('app'));
+    const html = htm.bind(React.createElement);
+
+    ReactDOM.render(html\`<\$\{App\} cdn=${cdn}/>\`, document.getElementById('app'));
   </script>
 </body>
 </html>

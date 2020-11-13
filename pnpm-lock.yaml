@@ -1,4 +1,5 @@
 dependencies:
+  minimist: 1.2.5
   prompts: 2.4.0
 lockfileVersion: 5.1
 packages:
@@ -8,6 +9,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
+  /minimist/1.2.5:
+    dev: false
+    resolution:
+      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /prompts/2.4.0:
     dependencies:
       kleur: 3.0.3
@@ -22,4 +27,5 @@ packages:
     resolution:
       integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
 specifiers:
+  minimist: ^1.2.5
   prompts: ^2.4.0

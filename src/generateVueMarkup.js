@@ -6,16 +6,9 @@ module.exports = function(options) {
 
   const {
     projectName,
-    importMaps,
     cdn,
     framework
   } = options;
-
-  const generateImports = () => {
-      return `
-    import Vue  from "${ importMaps ? 'vue' : packageUrls[cdn][framework]['vue'] }";
-      `;
-  };
 
     const markup = `
 <!DOCTYPE html>
@@ -26,35 +19,22 @@ module.exports = function(options) {
 </head>
 <body>
   <div id="app"></app>
-  ${ importMaps ? 
-  `<script type="module" src="https://jspm.dev/es-module-shims"></script>
+  <script type="module" src="https://jspm.dev/es-module-shims"></script>
   <script type="importmap-shim">
   ${generateImportMap(framework,cdn)}
-  </script>` : '' }
-  <script type="${ importMaps ? 'module-shim' : 'module' }">
-  ${generateImports()}
-const App = {
-  template: \`
-    <div>
-     <h1>Hello ${framework} from ${cdn}</h1>
-     <p>{{ message }}</p>
-    </div>
-  \`,
-  data() {
-    return {
-      message: 'Oh hi from the component'
-    }
-  }
-};
+  </script>
+  <script type="module-shim">
+    import Vue  from "vue";
+    import App from './App.js';
 
-new Vue({
-  el: '#app',
-  components: {
-    App
-  },
-  template: \`<App/>\`
-});
-      </script>
+    new Vue({
+      el: '#app',
+      components: {
+        App
+      },
+      template: \`<App/>\`
+    });
+  </script>
 </body>
 </html>
     `;

@@ -13,6 +13,7 @@
   "author": "Rajasegar Chandran <rajasegar.c@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "minimist": "^1.2.5",
     "prompts": "^2.4.0"
   }
 }
