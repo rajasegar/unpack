@@ -3,6 +3,7 @@
 const fs = require('fs');
 const util = require('util');
 const generateMarkup = require('./src/generateMarkup');
+const generatePreactMarkup = require('./src/generatePreactMarkup');
 module.exports = function(options) {
   const { projectName, framework, cdn, importMaps } = options;
 
@@ -14,7 +15,16 @@ module.exports = function(options) {
     console.log('creating project dir');
     await mkdir(projectName);
 
-    const markup = generateMarkup(options);
+    let markup = '';
+    switch(framework) {
+      case 'React':
+        markup = generateMarkup(options);
+        break;
+
+      case 'Preact':
+        markup = generatePreactMarkup(options);
+        break;
+    }
 
     console.log('creating index.html');
     await writeFile(`${projectName}/index.html`, markup, 'utf-8');
