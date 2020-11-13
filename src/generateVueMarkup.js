@@ -13,7 +13,7 @@ module.exports = function(options) {
 
   const generateImports = () => {
       return `
-    import { h, Component, render }  from "${ importMaps ? 'preact' : packageUrls[cdn][framework]['preact'] }";
+    import Vue  from "${ importMaps ? 'vue' : packageUrls[cdn][framework]['vue'] }";
       `;
   };
 
@@ -33,13 +33,28 @@ module.exports = function(options) {
   </script>` : '' }
   <script type="${ importMaps ? 'module-shim' : 'module' }">
   ${generateImports()}
-    import htm from "${ importMaps ? 'htm' : packageUrls[cdn][framework]['htm']}";
+const App = {
+  template: \`
+    <div>
+     <h1>Hello ${framework} from ${cdn}</h1>
+     <p>{{ message }}</p>
+    </div>
+  \`,
+  data() {
+    return {
+      message: 'Oh hi from the component'
+    }
+  }
+};
 
-    const html = htm.bind(h);
-    const App = html\`<h1>Hello ${framework} from ${cdn}</h1>\`;
-
-    render(App, document.getElementById('app'));
-  </script>
+new Vue({
+  el: '#app',
+  components: {
+    App
+  },
+  template: \`<App/>\`
+});
+      </script>
 </body>
 </html>
     `;

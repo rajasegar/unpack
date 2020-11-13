@@ -10,6 +10,9 @@ module.exports = {
     'Preact' : {
       'preact': 'https://jspm.dev/preact',
       'htm': 'https://jspm.dev/htm',
+    },
+    'Vue': {
+       "vue": "https://jspm.dev/vue/dist/vue"
     }
   },
   'skypack': {
@@ -21,6 +24,9 @@ module.exports = {
     'Preact' : {
       'preact': 'https://cdn.skypack.dev/preact?min',
       'htm': 'https://cdn.skypack.dev/htm?min',
+    },
+    'Vue': {
+       "vue": "https://cdn.skypack.dev/vue?min"
     }
   },
   'unpkg': {
@@ -31,6 +37,9 @@ module.exports = {
     'Preact' : {
       'preact': 'https://unpkg.com/preact?module',
       'htm': 'https://unpkg.com/htm?module',
+    },
+    'Vue': {
+       "vue": "https://unpkg.com/vue?module"
     }
   }
 };
