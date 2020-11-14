@@ -41,7 +41,21 @@ module.exports = {
     'Vue': {
        "vue": "https://unpkg.com/vue?module"
     }
-  }
+  },
+  'esm': {
+    'React' : {
+      'react': 'https://esm.sh/react',
+      'react-dom': 'https://esm.sh/react-dom',
+      'htm': 'https://esm.sh/htm',
+    },
+    'Preact' : {
+      'preact': 'https://esm.sh/preact',
+      'htm': 'https://esm.sh/htm',
+    },
+    'Vue': {
+       "vue": "https://esm.sh/vue"
+    }
+  },
 };
 
 

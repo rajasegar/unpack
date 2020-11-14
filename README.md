@@ -96,13 +96,14 @@ Instead you can simply use:
 import React from 'react';
 ```
 
-Import maps are not yet mainstream, since not all the browsers implemented them and Chrome supports it behind a [feature flag](https://developers.chrome.com/extensions/experimental). That's whyunpack includes the [es-module-shims](https://github.com/guybedford/es-module-shims) script to work with import maps.
+Import maps are not yet mainstream, since not all the browsers implemented them and Chrome supports it behind a [feature flag](https://developers.chrome.com/extensions/experimental). That's why unpack includes the [es-module-shims](https://github.com/guybedford/es-module-shims) script to work with import maps.
 
 
 ## CDN Support
 - [Skypack](https://skypack.dev)
 - [jspm](https://jspm.dev)
 - [unpkg](https://unpkg.com)
+- [esm](https://esm.sh)
 
 ## Framework Support
 - [React](https://reactjs.org)

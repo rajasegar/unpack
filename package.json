@@ -7,7 +7,7 @@
     "unpack": "bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "qunit tests/**/*.test.js"
   },
   "keywords": [],
   "author": "Rajasegar Chandran <rajasegar.c@gmail.com>",
@@ -15,5 +15,11 @@
   "dependencies": {
     "minimist": "^1.2.5",
     "prompts": "^2.4.0"
+  },
+  "devDependencies": {
+    "execa": "^4.1.0",
+    "qunit": "^2.12.0",
+    "tmp": "^0.2.1",
+    "walk-sync": "^2.2.0"
   }
 }

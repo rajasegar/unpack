@@ -34,6 +34,7 @@ if(argv._.length < 2) {
         { title: 'skypack.dev', value: 'skypack' },
         { title: 'jspm.dev', value: 'jspm' },
         { title: 'unpkg.com', value: 'unpkg' },
+        { title: 'esm.sh', value: 'esm' },
         { title: 'jsdeliver.net', value: 'jsdeliver' },
       ]
     },
@@ -49,7 +50,7 @@ if(argv._.length < 2) {
   const options = {
     projectName: argv._[1],
     framework: argv.template || argv.t,
-    cdn: 'jspm'
+    cdn: argv.cdn || 'jspm'
   }
   createApp(options);
 }
