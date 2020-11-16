@@ -19,7 +19,6 @@ module.exports = function (options) {
   </script>
   <script type="module-shim">
 
-  import { html, css, LitElement } from 'lit-element';
   import MyElement from './App.js';
 
   window.customElements.define('my-element', MyElement);

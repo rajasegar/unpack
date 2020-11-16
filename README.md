@@ -6,7 +6,8 @@
 
 :rocket: Create web apps without a bundler :package:. 
 
-unpack is a web app scaffolding tool which generates a project boilerplate with no `npm` dependencies, to build apps within the browser.
+unpack is a web app scaffolding tool which generates a project boilerplate with no `npm` dependencies, to develope and build apps within the browser
+without any build tooling.
 
 **WARNING**: Not recommended for production workflows.
 
@@ -119,7 +120,7 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 - [Skypack](https://skypack.dev)
 - [jspm](https://jspm.dev)
 - [unpkg](https://unpkg.com)
-- [esm](https://esm.sh)
+- [esm.sh](https://esm.sh)
 - [jsdelivr](https://cdn.jsdelivr.net)
 
 ## Framework Support
