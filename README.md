@@ -1,7 +1,7 @@
 # unpack
 
 ![Build and Deploy](https://github.com/rajasegar/unpack/workflows/Build%20and%20Deploy/badge.svg)
-[![npm version](http://img.shields.io/npm/v/@terminal-junkies/unpack.svg?style=flat)](https://npmjs.org/package/@terminal-junkies/unpack "View this project on npm")
+[![npm version](http://img.shields.io/npm/v/@rajasegar/unpack.svg?style=flat)](https://npmjs.org/package/@rajasegar/unpack "View this project on npm")
 
 
 :rocket: Create web apps without a bundler :package:. 
