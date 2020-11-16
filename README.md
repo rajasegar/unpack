@@ -1,5 +1,7 @@
 # unpack
 
+![Build and Deploy](https://github.com/rajasegar/unpack/workflows/Build%20and%20Deploy/badge.svg)
+
 :rocket: Create web apps without a bundler :package:. 
 
 unpack is a web app scaffolding tool which generates a project boilerplate with no `npm` dependencies, to build apps within the browser.
