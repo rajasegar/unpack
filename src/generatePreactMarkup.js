@@ -23,7 +23,7 @@ module.exports = function (options) {
     import App from './App.js';
     const html = htm.bind(h);
 
-    render(html\`<\$\{App\} cdn='${cdn}' />\`, document.getElementById('app'));
+    render(html\`<$\{App} cdn='${cdn}' />\`, document.getElementById('app'));
   </script>
 </body>
 </html>

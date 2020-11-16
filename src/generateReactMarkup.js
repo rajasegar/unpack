@@ -35,7 +35,7 @@ module.exports = function (options) {
 
     const html = htm.bind(React.createElement);
 
-    ReactDOM.render(html\`<\$\{App\} cdn=${cdn}/>\`, document.getElementById('app'));
+    ReactDOM.render(html\`<$\{App} cdn=${cdn}/>\`, document.getElementById('app'));
   </script>
 </body>
 </html>
