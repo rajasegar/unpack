@@ -4,17 +4,6 @@ const generateImportMap = require('./generateImportMap');
 module.exports = function (options) {
   const { projectName, cdn, framework } = options;
 
-  const generateImports = () => {
-    if (cdn === 'unpkg') {
-      return `import { React, ReactDOM } from "esm-react";`;
-    } else {
-      return `
-    import React from "react";
-    import ReactDOM from "react-dom";
-      `;
-    }
-  };
-
   const markup = `
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +18,8 @@ module.exports = function (options) {
   ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
-  ${generateImports()}
+    import React from "react";
+    import ReactDOM from "react-dom";
     import htm from "htm";
     import App from './App.js';
 

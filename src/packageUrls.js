@@ -31,7 +31,9 @@ module.exports = {
   },
   unpkg: {
     React: {
-      'esm-react': 'https://unpkg.com/esm-react',
+      react: 'https://unpkg.com/@esm-bundle/react/esm/react.production.min.js',
+      'react-dom':
+        'https://unpkg.com/@esm-bundle/react-dom/esm/react-dom.production.min.js',
       htm: 'https://unpkg.com/htm?module',
     },
     Preact: {
