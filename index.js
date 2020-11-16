@@ -6,6 +6,7 @@ const util = require('util');
 const generateReactMarkup = require('./src/generateReactMarkup');
 const generatePreactMarkup = require('./src/generatePreactMarkup');
 const generateVueMarkup = require('./src/generateVueMarkup');
+const generateLitElementMarkup = require('./src/generateLitElementMarkup');
 
 module.exports = function (options) {
   const { projectName, framework } = options;
@@ -30,6 +31,10 @@ module.exports = function (options) {
 
       case 'Vue':
         markup = generateVueMarkup(options);
+        break;
+
+      case 'lit-element':
+        markup = generateLitElementMarkup(options);
         break;
     }
 

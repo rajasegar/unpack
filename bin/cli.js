@@ -26,6 +26,7 @@ if (argv._.length < 2) {
         },
         { title: 'Vue', value: 'Vue' },
         { title: 'Preact', value: 'Preact' },
+        { title: 'lit-element', value: 'lit-element' },
       ],
       initial: 0,
     },

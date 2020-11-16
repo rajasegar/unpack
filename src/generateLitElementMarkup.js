@@ -12,19 +12,17 @@ module.exports = function (options) {
   <title>${projectName}</title>
 </head>
 <body>
-  <div id="app"></app>
+  <my-element></my-element>
   <script type="module" src="https://jspm.dev/es-module-shims"></script>
   <script type="importmap-shim">
   ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
-    import React from "react";
-    import ReactDOM from "react-dom";
-    import htm from "htm";
-    import App from './App.js';
-    const html = htm.bind(h);
 
-    render(html\`<$\{App} cdn='${cdn}' />\`, document.getElementById('app'));
+  import { html, css, LitElement } from 'lit-element';
+  import MyElement from './App.js';
+
+  window.customElements.define('my-element', MyElement);
   </script>
 </body>
 </html>

@@ -183,6 +183,46 @@ QUnit.module('unpack', function (hooks) {
         );
         assert.equal(input, output);
       });
+
+      QUnit.test('should generate with esm.sh', async function (assert) {
+        let result = await execa(EXECUTABLE_PATH, [
+          'new',
+          'my-preact-app',
+          '--template',
+          'Preact',
+          '--cdn',
+          'esm',
+        ]);
+
+        assert.equal(result.exitCode, 0, 'exited with zero');
+        assert.deepEqual(walkSync(cliProject.name), [
+          'my-preact-app/',
+          'my-preact-app/App.js',
+          'my-preact-app/index.html',
+        ]);
+
+        const actual = fs.readFileSync(
+          PROJECT_ROOT + '/src/templates/Preact/App.js',
+          'utf8'
+        );
+        const expected = fs.readFileSync(
+          cliProject.name + '/my-preact-app/App.js',
+          'utf8'
+        );
+        assert.equal(actual, expected);
+
+        // index.html
+        const input = generatePreactMarkup({
+          projectName: 'my-preact-app',
+          framework: 'Preact',
+          cdn: 'esm',
+        });
+        const output = fs.readFileSync(
+          cliProject.name + '/my-preact-app/index.html',
+          'utf8'
+        );
+        assert.equal(input, output);
+      });
     });
   });
 });

@@ -14,6 +14,9 @@ module.exports = {
     Vue: {
       vue: 'https://jspm.dev/vue/dist/vue',
     },
+    'lit-element': {
+      'lit-element': 'https://jspm.dev/lit-element',
+    },
   },
   skypack: {
     React: {
@@ -27,6 +30,9 @@ module.exports = {
     },
     Vue: {
       vue: 'https://cdn.skypack.dev/vue?min',
+    },
+    'lit-element': {
+      'lit-element': 'https://cdn.skypack.dev/lit-element?min',
     },
   },
   unpkg: {
@@ -43,6 +49,9 @@ module.exports = {
     Vue: {
       vue: 'https://unpkg.com/vue?module',
     },
+    'lit-element': {
+      'lit-element': 'https://unpkg.com/lit-element?module',
+    },
   },
   esm: {
     React: {
@@ -56,6 +65,9 @@ module.exports = {
     },
     Vue: {
       vue: 'https://esm.sh/vue',
+    },
+    'lit-element': {
+      'lit-element': 'https://esm.sh/lit-element',
     },
   },
   jsdelivr: {
