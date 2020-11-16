@@ -41,12 +41,25 @@ servor . --reload --browse
 
 You can also choose from predefined templates for a particular framework using:
 ```
-unpack new <project-name> --template React
+unpack new <project-name> --template React --cdn skypack
 ```
 or 
 ```
-unpack new my-vue-app -t Vue
+unpack new my-preact-app -t Preact --cdn skypack
 ```
+
+The `--template` option can have the following values:
+- React
+- Preact
+- Vue
+
+The `--cdn` option can have the following values:
+- jspm
+- skypack
+- unpkg
+- esm
+- jsdelivr
+
 
 ## index.html (generated)
 ```html
@@ -104,6 +117,7 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 - [jspm](https://jspm.dev)
 - [unpkg](https://unpkg.com)
 - [esm](https://esm.sh)
+- [jsdelivr](https://cdn.jsdelivr.net)
 
 ## Framework Support
 - [React](https://reactjs.org)

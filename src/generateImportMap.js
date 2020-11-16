@@ -1,13 +1,12 @@
 'use strict';
 
 const packageUrls = require('./packageUrls');
-module.exports = function(framework, cdn) {
+module.exports = function (framework, cdn) {
   const imap = {
-    'imports': {
-    }
+    imports: {},
   };
 
   imap.imports = packageUrls[cdn][framework];
 
-  return JSON.stringify(imap,null,2);
-}
+  return JSON.stringify(imap, null, 2);
+};

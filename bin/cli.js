@@ -7,8 +7,7 @@ const createApp = require('../');
 
 const argv = minimist(process.argv.slice(2));
 
-if(argv._.length < 2) {
-
+if (argv._.length < 2) {
   const questions = [
     {
       type: 'text',
@@ -20,11 +19,15 @@ if(argv._.length < 2) {
       name: 'framework',
       message: 'Pick a framework',
       choices: [
-        { title: 'React', description: 'React.js from Facebook', value: 'React' },
-        { title: 'Vue', value: 'Vue'},
-        { title: 'Preact', value: 'Preact' }
+        {
+          title: 'React',
+          description: 'React.js from Facebook',
+          value: 'React',
+        },
+        { title: 'Vue', value: 'Vue' },
+        { title: 'Preact', value: 'Preact' },
       ],
-      initial: 0
+      initial: 0,
     },
     {
       type: 'select',
@@ -35,22 +38,19 @@ if(argv._.length < 2) {
         { title: 'jspm.dev', value: 'jspm' },
         { title: 'unpkg.com', value: 'unpkg' },
         { title: 'esm.sh', value: 'esm' },
-        { title: 'jsdeliver.net', value: 'jsdeliver' },
-      ]
+        { title: 'jsdelivr.net', value: 'jsdelivr' },
+      ],
     },
   ];
   (async () => {
     const response = await prompts(questions);
     createApp(response);
   })();
-
 } else {
-
-  const capitalize = str => str[0].toUpperCase() + str.slice(1);
   const options = {
     projectName: argv._[1],
     framework: argv.template || argv.t,
-    cdn: argv.cdn || 'jspm'
-  }
+    cdn: argv.cdn || 'jspm',
+  };
   createApp(options);
 }

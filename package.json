@@ -7,7 +7,8 @@
     "unpack": "bin/cli.js"
   },
   "scripts": {
-    "test": "qunit tests/**/*.test.js"
+    "test": "qunit ",
+    "lint": "eslint . --fix"
   },
   "keywords": [],
   "author": "Rajasegar Chandran <rajasegar.c@gmail.com>",
@@ -17,7 +18,12 @@
     "prompts": "^2.4.0"
   },
   "devDependencies": {
+    "eslint": "^7.13.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
     "execa": "^4.1.0",
+    "prettier": "^2.1.2",
     "qunit": "^2.12.0",
     "tmp": "^0.2.1",
     "walk-sync": "^2.2.0"

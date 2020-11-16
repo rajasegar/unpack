@@ -1,16 +1,10 @@
 'use strict';
 
 const generateImportMap = require('./generateImportMap');
-const packageUrls = require('./packageUrls');
-module.exports = function(options) {
+module.exports = function (options) {
+  const { projectName, cdn, framework } = options;
 
-  const {
-    projectName,
-    cdn,
-    framework
-  } = options;
-
-    const markup = `
+  const markup = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +15,7 @@ module.exports = function(options) {
   <div id="app"></app>
   <script type="module" src="https://jspm.dev/es-module-shims"></script>
   <script type="importmap-shim">
-  ${generateImportMap(framework,cdn)}
+  ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
     import { h, Component, render }  from "preact";

@@ -7,9 +7,7 @@ export default {
   `,
   data() {
     return {
-      message: 'Oh hi from the component'
-    }
-  }
+      message: 'Oh hi from the component',
+    };
+  },
 };
-
-

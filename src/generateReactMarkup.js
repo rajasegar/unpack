@@ -1,27 +1,21 @@
 'use strict';
 
 const generateImportMap = require('./generateImportMap');
-const packageUrls = require('./packageUrls');
-module.exports = function(options) {
-
-  const {
-    projectName,
-    cdn,
-    framework
-  } = options;
+module.exports = function (options) {
+  const { projectName, cdn, framework } = options;
 
   const generateImports = () => {
-    if(cdn === 'unpkg') {
-      return `import { React, ReactDOM } from "esm-react";`
+    if (cdn === 'unpkg') {
+      return `import { React, ReactDOM } from "esm-react";`;
     } else {
       return `
     import React from "react";
     import ReactDOM from "react-dom";
       `;
     }
-  }
+  };
 
-    const markup = `
+  const markup = `
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +26,7 @@ module.exports = function(options) {
   <div id="app"></app>
   <script type="module" src="https://jspm.dev/es-module-shims"></script>
   <script type="importmap-shim">
-  ${generateImportMap(framework,cdn)}
+  ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
   ${generateImports()}
