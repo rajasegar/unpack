@@ -1,6 +1,8 @@
 # unpack
 
 ![Build and Deploy](https://github.com/rajasegar/unpack/workflows/Build%20and%20Deploy/badge.svg)
+[![npm version](http://img.shields.io/npm/v/@terminal-junkies/unpack.svg?style=flat)](https://npmjs.org/package/@terminal-junkies/unpack "View this project on npm")
+
 
 :rocket: Create web apps without a bundler :package:. 
 
@@ -84,7 +86,6 @@ The `--cdn` option can have the following values:
   }
   </script>
   <script type="module-shim">
-  
     import React from "react";
     import ReactDOM from "react-dom";
     import htm from "htm";
@@ -125,6 +126,7 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 - [React](https://reactjs.org)
 - [Vue.js](https://vuejs.org)
 - [Preact](https://preactjs.com)
+- [lit-element](https://lit-element.polymer-project.org/)
 
 
 ## Bundling for production
