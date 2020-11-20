@@ -22,9 +22,9 @@ module.exports = function (options) {
     import ReactDOM from "react-dom";
     import htm from "htm";
     import App from './App.js';
-    const html = htm.bind(h);
+    const html = htm.bind(React.createElement);
 
-    render(html\`<$\{App} cdn='${cdn}' />\`, document.getElementById('app'));
+    ReactDOM.render(html\`<$\{App} cdn='${cdn}' />\`, document.getElementById('app'));
   </script>
 </body>
 </html>

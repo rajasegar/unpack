@@ -13,6 +13,7 @@ if (argv._.length < 2) {
       type: 'text',
       name: 'projectName',
       message: 'Enter the project name:',
+      validate: (value) => (!value ? `Invalid project name` : true),
     },
     {
       type: 'select',

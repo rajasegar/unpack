@@ -7,6 +7,7 @@
     "unpack": "bin/cli.js"
   },
   "scripts": {
+    "start": "bin/cli.js",
     "test": "qunit",
     "lint": "eslint .",
     "deploy": "git push && git push --tags && npm publish"
