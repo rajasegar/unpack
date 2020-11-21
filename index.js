@@ -18,33 +18,39 @@ module.exports = function (options) {
   (async () => {
     console.log('creating project dir');
     await mkdir(projectName);
+    try {
+      let markup = '';
+      switch (framework) {
+        case 'React':
+          markup = generateReactMarkup(options);
+          break;
 
-    let markup = '';
-    switch (framework) {
-      case 'React':
-        markup = generateReactMarkup(options);
-        break;
+        case 'Preact':
+          markup = generatePreactMarkup(options);
+          break;
 
-      case 'Preact':
-        markup = generatePreactMarkup(options);
-        break;
+        case 'Vue':
+          markup = generateVueMarkup(options);
+          break;
 
-      case 'Vue':
-        markup = generateVueMarkup(options);
-        break;
+        case 'lit-element':
+          markup = generateLitElementMarkup(options);
+          break;
+      }
 
-      case 'lit-element':
-        markup = generateLitElementMarkup(options);
-        break;
+      console.log('creating index.html');
+      await writeFile(`${projectName}/index.html`, markup, 'utf-8');
+
+      console.log('creating App.js');
+      await copyFile(
+        __dirname + `/src/templates/${framework}/App.js`,
+        `${projectName}/App.js`
+      );
+    } catch (e) {
+      console.error(e);
+      if (fs.existsSync(projectName)) {
+        fs.rmdirSync(projectName);
+      }
     }
-
-    console.log('creating index.html');
-    await writeFile(`${projectName}/index.html`, markup, 'utf-8');
-
-    console.log('creating App.js');
-    await copyFile(
-      __dirname + `/src/templates/${framework}/App.js`,
-      `${projectName}/App.js`
-    );
   })();
 };

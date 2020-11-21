@@ -6,6 +6,7 @@ const minimist = require('minimist');
 const createApp = require('../');
 
 const argv = minimist(process.argv.slice(2));
+let isTerminated = false;
 
 if (argv._.length < 2) {
   const questions = [
@@ -13,6 +14,7 @@ if (argv._.length < 2) {
       type: 'text',
       name: 'projectName',
       message: 'Enter the project name:',
+      validate: (value) => (!value ? `Invalid project name` : true),
     },
     {
       type: 'select',
@@ -43,9 +45,18 @@ if (argv._.length < 2) {
       ],
     },
   ];
+
+  const onCancel = () => {
+    console.log('Unpack terminated!');
+    isTerminated = true; // set flag
+    return false; // stop prompting
+  };
+
   (async () => {
-    const response = await prompts(questions);
-    createApp(response);
+    const response = await prompts(questions, { onCancel });
+    if (!isTerminated) {
+      createApp(response);
+    }
   })();
 } else {
   const options = {
