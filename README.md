@@ -57,6 +57,7 @@ The `--template` option can have the following values:
 - React
 - Preact
 - Vue
+- Vue3
 - lit-element
 
 The `--cdn` option can have the following values:
