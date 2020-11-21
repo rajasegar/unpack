@@ -14,6 +14,9 @@ module.exports = {
     Vue: {
       vue: 'https://jspm.dev/vue/dist/vue',
     },
+    Vue3: {
+      vue: 'https://jspm.dev/vue@next',
+    },
     'lit-element': {
       'lit-element': 'https://jspm.dev/lit-element',
     },

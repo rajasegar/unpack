@@ -19,7 +19,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['tests/**'],
+      files: ['test/**'],
     },
   ],
 };

@@ -57,6 +57,7 @@ The `--template` option can have the following values:
 - React
 - Preact
 - Vue
+- lit-element
 
 The `--cdn` option can have the following values:
 - jspm
@@ -133,3 +134,5 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 ## Bundling for production
 Work in progress...
 
+## Known issues
+- Vue template works only with jspm
