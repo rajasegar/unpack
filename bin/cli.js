@@ -42,6 +42,7 @@ if (argv._.length < 2) {
         { title: 'jspm.dev', value: 'jspm' },
         { title: 'unpkg.com', value: 'unpkg' },
         { title: 'esm.sh', value: 'esm' },
+        { title: 'esm.run', value: 'esm.run' },
         { title: 'jsdelivr.net', value: 'jsdelivr' },
       ],
     },

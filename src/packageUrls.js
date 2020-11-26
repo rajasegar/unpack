@@ -89,4 +89,10 @@ module.exports = {
       vue: 'https://esm.sh/vue',
     },
   },
+  'esm.run': {
+    Preact: {
+      preact: 'https://esm.run/preact',
+      htm: 'https://esm.run/htm'
+    }
+  }
 };

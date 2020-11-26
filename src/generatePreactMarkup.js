@@ -18,12 +18,12 @@ module.exports = function (options) {
   ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
-    import { h, Component, render }  from "preact";
+    import { h, render }  from "preact";
     import htm from "htm";
     import App from './App.js';
     const html = htm.bind(h);
 
-    render(html\`<$\{App} cdn='${cdn}' />\`, document.getElementById('app'));
+    render(html\`<$\{App} page='${cdn}' />\`, document.getElementById('app'));
   </script>
 </body>
 </html>
