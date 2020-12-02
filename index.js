@@ -8,6 +8,7 @@ const generatePreactMarkup = require('./src/generatePreactMarkup');
 const generateVueMarkup = require('./src/generateVueMarkup');
 const generateVue3Markup = require('./src/generateVue3Markup');
 const generateLitElementMarkup = require('./src/generateLitElementMarkup');
+const generateHyperappMarkup = require('./src/generateHyperappMarkup');
 
 module.exports = function (options) {
   const { projectName, framework } = options;
@@ -40,6 +41,10 @@ module.exports = function (options) {
 
         case 'lit-element':
           markup = generateLitElementMarkup(options);
+          break;
+
+        case 'hyperapp':
+          markup = generateHyperappMarkup(options);
           break;
       }
 

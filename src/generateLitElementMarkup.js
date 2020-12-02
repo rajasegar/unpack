@@ -9,7 +9,7 @@ module.exports = function (options) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>${projectName}</title>
+  <title>${projectName} - lit-element with ${cdn}</title>
 </head>
 <body>
   <my-element></my-element>

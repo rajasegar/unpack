@@ -20,6 +20,9 @@ module.exports = {
     'lit-element': {
       'lit-element': 'https://jspm.dev/lit-element',
     },
+    hyperapp: {
+      hyperapp: 'https://jspm.dev/hyperapp',
+    },
   },
   skypack: {
     React: {
@@ -36,6 +39,9 @@ module.exports = {
     },
     'lit-element': {
       'lit-element': 'https://cdn.skypack.dev/lit-element?min',
+    },
+    hyperapp: {
+      hyperapp: 'https://cdn.skypack.dev/hyperapp',
     },
   },
   unpkg: {
@@ -55,6 +61,9 @@ module.exports = {
     'lit-element': {
       'lit-element': 'https://unpkg.com/lit-element?module',
     },
+    hyperapp: {
+      hyperapp: 'https://unpkg.com/hyperapp',
+    },
   },
   esm: {
     React: {
@@ -72,6 +81,9 @@ module.exports = {
     'lit-element': {
       'lit-element': 'https://esm.sh/lit-element',
     },
+    hyperapp: {
+      hyperapp: 'https://esm.sh/hyperapp',
+    },
   },
   jsdelivr: {
     React: {
@@ -88,11 +100,17 @@ module.exports = {
     Vue: {
       vue: 'https://esm.sh/vue',
     },
+    hyperapp: {
+      hyperapp: 'https://cdn.jsdelivr.net/npm/hyperapp',
+    },
   },
   'esm.run': {
     Preact: {
       preact: 'https://esm.run/preact',
-      htm: 'https://esm.run/htm'
-    }
-  }
+      htm: 'https://esm.run/htm',
+    },
+    hyperapp: {
+      hyperapp: 'https://esm.run/hyperapp',
+    },
+  },
 };
