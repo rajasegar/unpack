@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "bin/cli.js",
-    "test": "qunit",
+    "test": "npm-run-all test:*",
+    "test:render": "qunit test/render/**/*.test.js",
+    "test:cli": "qunit test/cli/**/*.test.js",
     "lint": "eslint .",
     "deploy": "git push && git push --tags && npm publish"
   },
@@ -30,7 +32,11 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "execa": "^4.1.0",
+    "express": "^4.17.1",
+    "get-port": "^5.1.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
+    "puppeteer": "^5.5.0",
     "qunit": "^2.11.3",
     "tmp": "^0.2.1",
     "walk-sync": "^2.2.0"

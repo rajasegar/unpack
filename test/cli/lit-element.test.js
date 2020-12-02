@@ -5,11 +5,11 @@ const execa = require('execa');
 const walkSync = require('walk-sync');
 const fs = require('fs');
 
-const PROJECT_ROOT = path.join(__dirname, '..');
+const PROJECT_ROOT = path.join(__dirname, '../..');
 const EXECUTABLE_PATH = path.join(PROJECT_ROOT, 'bin', 'cli.js');
 const ROOT = process.cwd();
 
-const generateHyperappMarkup = require('../src/generateHyperappMarkup');
+const generateLitElementMarkup = require('../../src/generateLitElementMarkup');
 
 QUnit.module('unpack', function (hooks) {
   let cliProject;
@@ -25,45 +25,44 @@ QUnit.module('unpack', function (hooks) {
   });
 
   QUnit.module('new', function () {
-    QUnit.module('hyperapp', function () {
+    QUnit.module('lit-element', function () {
       const cdns = ['jspm', 'skypack', 'esm', 'unpkg', 'esm.run', 'jsdelivr'];
-
       cdns.forEach((cdn) => {
         QUnit.test(`should generate with ${cdn}`, async function (assert) {
           let result = await execa(EXECUTABLE_PATH, [
             'new',
-            'my-hyperapp-app',
+            'my-lit-element-app',
             '--template',
-            'hyperapp',
+            'lit-element',
             '--cdn',
             cdn,
           ]);
 
           assert.equal(result.exitCode, 0, 'exited with zero');
           assert.deepEqual(walkSync(cliProject.name), [
-            'my-hyperapp-app/',
-            'my-hyperapp-app/App.js',
-            'my-hyperapp-app/index.html',
+            'my-lit-element-app/',
+            'my-lit-element-app/App.js',
+            'my-lit-element-app/index.html',
           ]);
 
           const actual = fs.readFileSync(
-            PROJECT_ROOT + '/src/templates/hyperapp/App.js',
+            PROJECT_ROOT + '/src/templates/lit-element/App.js',
             'utf8'
           );
           const expected = fs.readFileSync(
-            cliProject.name + '/my-hyperapp-app/App.js',
+            cliProject.name + '/my-lit-element-app/App.js',
             'utf8'
           );
           assert.equal(actual, expected);
 
           // index.html
-          const input = generateHyperappMarkup({
-            projectName: 'my-hyperapp-app',
-            framework: 'hyperapp',
+          const input = generateLitElementMarkup({
+            projectName: 'my-lit-element-app',
+            framework: 'lit-element',
             cdn,
           });
           const output = fs.readFileSync(
-            cliProject.name + '/my-hyperapp-app/index.html',
+            cliProject.name + '/my-lit-element-app/index.html',
             'utf8'
           );
           assert.equal(input, output);

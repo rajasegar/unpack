@@ -5,11 +5,11 @@ const execa = require('execa');
 const walkSync = require('walk-sync');
 const fs = require('fs');
 
-const PROJECT_ROOT = path.join(__dirname, '..');
+const PROJECT_ROOT = path.join(__dirname, '../..');
 const EXECUTABLE_PATH = path.join(PROJECT_ROOT, 'bin', 'cli.js');
 const ROOT = process.cwd();
 
-const generateReactMarkup = require('../src/generateReactMarkup');
+const generateReactMarkup = require('../../src/generateReactMarkup');
 
 QUnit.module('unpack', function (hooks) {
   let cliProject;
