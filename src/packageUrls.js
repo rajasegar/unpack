@@ -112,5 +112,8 @@ module.exports = {
     hyperapp: {
       hyperapp: 'https://esm.run/hyperapp',
     },
+    'lit-element': {
+      'lit-element': 'https://esm.run/lit-element',
+    },
   },
 };

@@ -59,6 +59,7 @@ The `--template` option can have the following values:
 - Vue
 - Vue3
 - lit-element
+- hyperapp
 
 The `--cdn` option can have the following values:
 - jspm
@@ -66,6 +67,7 @@ The `--cdn` option can have the following values:
 - unpkg
 - esm
 - jsdelivr
+- esm.run
 
 
 ## index.html (generated)
@@ -119,14 +121,16 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 
 
 ## Support Matrix
-| Framework/CDN | Skypack            | jspm               | unpkg              | esm.sh             | jsdelivr           |
-|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| React         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Preact        | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Vue           | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| Vue 3         | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| lit-element   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Framework/CDN | Skypack            | jspm               | unpkg              | esm.sh             | jsdelivr           | esm.run            |
+|---------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
+| React         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| Preact        | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Vue           | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| Vue 3         | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| lit-element   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
+| hyperapp      | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: |
 
+Edited the above Markdown table with [tablesgenerator.com](https://www.tablesgenerator.com/markdown_tables)
 
 ## CDN Support
 - [Skypack](https://skypack.dev)
@@ -134,12 +138,14 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 - [unpkg](https://unpkg.com)
 - [esm.sh](https://esm.sh)
 - [jsdelivr](https://cdn.jsdelivr.net)
+- [esm.run](https://esm.run)
 
 ## Framework Support
 - [React](https://reactjs.org)
 - [Vue.js](https://vuejs.org)
 - [Preact](https://preactjs.com)
 - [lit-element](https://lit-element.polymer-project.org/)
+- [hyperapp](https://github.com/jorgebucaran/hyperapp)
 
 
 ## Bundling for production
