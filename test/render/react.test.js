@@ -25,16 +25,15 @@ QUnit.module('unpack', function (hooks) {
   });
 
   QUnit.module('render', function () {
-    QUnit.module('lit-element', function () {
-      const cdns = ['jspm', 'skypack', 'unpkg', 'esm.run', 'jsdelivr'];
-
+    QUnit.module('React', function () {
+      const cdns = ['jspm', 'skypack', 'esm', 'jsdelivr', 'unpkg'];
       cdns.forEach((cdn) => {
         QUnit.test(`should work with ${cdn}`, async function (assert) {
           let result = await execa(EXECUTABLE_PATH, [
             'new',
-            'my-lit-element-app',
+            'my-react-app',
             '--template',
-            'lit-element',
+            'React',
             '--cdn',
             cdn,
           ]);
@@ -42,16 +41,17 @@ QUnit.module('unpack', function (hooks) {
           assert.equal(result.exitCode, 0, 'exited with zero');
 
           const app = express();
-          app.use(express.static(cliProject.name + '/my-lit-element-app'));
+          app.use(express.static(cliProject.name + '/my-react-app'));
 
           const port = await getPort();
           const server = app.listen(port, async () => {
             const browser = await puppeteer.launch();
             const page = await browser.newPage();
             await page.goto('http://localhost:' + port);
-            await page.waitForSelector('my-element', {
+            await page.waitForSelector('h1', {
               visible: true,
             });
+            //await page.screenshot({ path: `React-${cdn}.png` });
             await browser.close();
             server.close(function () {});
           });

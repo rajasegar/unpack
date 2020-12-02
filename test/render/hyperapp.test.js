@@ -52,7 +52,7 @@ QUnit.module('unpack', function (hooks) {
             await page.waitForSelector('main', {
               visible: true,
             });
-            await page.screenshot({ path: `hyperapp-${cdn}.png` });
+            //await page.screenshot({ path: `hyperapp-${cdn}.png` });
             await browser.close();
             server.close(function () {});
           });
