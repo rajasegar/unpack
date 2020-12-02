@@ -28,12 +28,12 @@ QUnit.module('unpack', function (hooks) {
     tmp.setGracefulCleanup();
   });
 
-  QUnit.module('new', function () {
+  QUnit.module('render', function () {
     QUnit.module('lit-element', function () {
       const cdns = ['jspm', 'skypack', 'unpkg', 'esm.run', 'jsdelivr'];
 
       cdns.forEach((cdn) => {
-        QUnit.test(`should generate with ${cdn}`, async function (assert) {
+        QUnit.test(`should work with ${cdn}`, async function (assert) {
           let result = await execa(EXECUTABLE_PATH, [
             'new',
             'my-lit-element-app',
