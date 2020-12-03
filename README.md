@@ -126,7 +126,7 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 | React         | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | Preact        | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Vue           | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| Vue 3         | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
+| Vue 3         | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
 | lit-element   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | hyperapp      | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: |
 
