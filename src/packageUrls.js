@@ -37,6 +37,9 @@ module.exports = {
     Vue: {
       vue: 'https://cdn.skypack.dev/vue?min',
     },
+    Vue3: {
+      vue: 'https://cdn.skypack.dev/vue@next/dist/vue.esm-browser.prod.js',
+    },
     'lit-element': {
       'lit-element': 'https://cdn.skypack.dev/lit-element?min',
     },

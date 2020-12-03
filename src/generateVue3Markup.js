@@ -18,7 +18,7 @@ module.exports = function (options) {
   ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
-    import Vue  from "vue";
+    import ${cdn === 'skypack' ? '* as Vue' : 'Vue'} from "vue";
     import App from './App.js';
 
     Vue.createApp(App).mount('#app');
