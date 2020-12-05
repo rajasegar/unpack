@@ -9,6 +9,7 @@ const generateVueMarkup = require('./src/generateVueMarkup');
 const generateVue3Markup = require('./src/generateVue3Markup');
 const generateLitElementMarkup = require('./src/generateLitElementMarkup');
 const generateHyperappMarkup = require('./src/generateHyperappMarkup');
+const generateCycleMarkup = require('./src/generateCycleMarkup');
 
 module.exports = function (options) {
   const { projectName, framework } = options;
@@ -45,6 +46,10 @@ module.exports = function (options) {
 
         case 'hyperapp':
           markup = generateHyperappMarkup(options);
+          break;
+
+        case 'Cycle':
+          markup = generateCycleMarkup(options);
           break;
       }
 

@@ -10,6 +10,7 @@
     "start": "bin/cli.js",
     "test": "npm-run-all test:*",
     "test:render": "qunit test/render/**/*.test.js",
+    "test:render:cycle": "qunit test/render/cycle.test.js",
     "test:cli": "qunit test/cli/**/*.test.js",
     "lint": "eslint .",
     "deploy": "git push && git push --tags && npm publish"

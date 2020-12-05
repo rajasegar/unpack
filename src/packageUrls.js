@@ -23,6 +23,11 @@ module.exports = {
     hyperapp: {
       hyperapp: 'https://jspm.dev/hyperapp',
     },
+    Cycle: {
+      xstream: 'https://jspm.dev/xstream',
+      '@cycle/run': 'https://jspm.dev/@cycle/run',
+      '@cycle/dom': 'https://jspm.dev/@cycle/dom',
+    },
   },
   skypack: {
     React: {
@@ -87,6 +92,11 @@ module.exports = {
     hyperapp: {
       hyperapp: 'https://esm.sh/hyperapp',
     },
+    Cycle: {
+      xstream: 'https://esm.sh/xstream',
+      '@cycle/run': 'https://esm.sh/@cycle/run',
+      '@cycle/dom': 'https://esm.sh/@cycle/dom',
+    },
   },
   jsdelivr: {
     React: {
@@ -96,6 +106,7 @@ module.exports = {
         'https://cdn.jsdelivr.net/npm/@esm-bundle/react-dom/esm/react-dom.production.min.js',
       htm: 'https://esm.sh/htm',
     },
+    /*
     Preact: {
       preact: 'https://esm.sh/preact',
       htm: 'https://esm.sh/htm',
@@ -103,6 +114,7 @@ module.exports = {
     Vue: {
       vue: 'https://esm.sh/vue',
     },
+    */
     hyperapp: {
       hyperapp: 'https://cdn.jsdelivr.net/npm/hyperapp',
     },
