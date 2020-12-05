@@ -26,7 +26,7 @@ QUnit.module('unpack', function (hooks) {
 
   QUnit.module('render', function () {
     QUnit.module('Vue3', function () {
-      const cdns = ['jspm', 'skypack'];
+      const cdns = ['skypack'];
       cdns.forEach((cdn) => {
         QUnit.test(`should work with ${cdn}`, async function (assert) {
           let result = await execa(EXECUTABLE_PATH, [

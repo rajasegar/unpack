@@ -60,6 +60,7 @@ The `--template` option can have the following values:
 - Vue3
 - lit-element
 - hyperapp
+- Cycle
 
 The `--cdn` option can have the following values:
 - jspm
@@ -129,6 +130,7 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 | Vue 3         | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
 | lit-element   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | hyperapp      | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: |
+| Cycle.js      | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
 
 Edited the above Markdown table with [tablesgenerator.com](https://www.tablesgenerator.com/markdown_tables)
 
@@ -146,6 +148,7 @@ Edited the above Markdown table with [tablesgenerator.com](https://www.tablesgen
 - [Preact](https://preactjs.com)
 - [lit-element](https://lit-element.polymer-project.org/)
 - [hyperapp](https://github.com/jorgebucaran/hyperapp)
+- [Cycle.js](https://cycle.js.org)
 
 
 ## Bundling for production

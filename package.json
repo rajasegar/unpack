@@ -9,8 +9,12 @@
   "scripts": {
     "start": "bin/cli.js",
     "test": "npm-run-all test:*",
-    "test:render": "qunit test/render/**/*.test.js",
-    "test:render:cycle": "qunit test/render/cycle.test.js",
+    "test:cycle": "qunit test/render/cycle.test.js",
+    "test:hyperapp": "qunit test/render/hyperapp.test.js",
+    "test:lit-element": "qunit test/render/lit-element.test.js",
+    "test:preact": "qunit test/render/preact.test.js",
+    "test:react": "qunit test/render/react.test.js",
+    "test:vue3": "qunit test/render/vue3.test.js",
     "test:cli": "qunit test/cli/**/*.test.js",
     "lint": "eslint .",
     "deploy": "git push && git push --tags && npm publish"

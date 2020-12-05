@@ -26,7 +26,7 @@ QUnit.module('unpack', function (hooks) {
 
   QUnit.module('render', function () {
     QUnit.module('Preact', function () {
-      const cdns = ['jspm', 'skypack', 'esm', 'unpkg', 'esm.run', 'jsdelivr'];
+      const cdns = ['jspm', 'skypack', 'esm', 'unpkg', 'esm.run'];
       cdns.forEach((cdn) => {
         QUnit.test(`should work with ${cdn}`, async function (assert) {
           let result = await execa(EXECUTABLE_PATH, [
