@@ -60,6 +60,7 @@ The `--template` option can have the following values:
 - Vue3
 - lit-element
 - hyperapp
+- RxJS
 - Cycle
 
 The `--cdn` option can have the following values:
@@ -148,6 +149,7 @@ Edited the above Markdown table with [tablesgenerator.com](https://www.tablesgen
 - [Preact](https://preactjs.com)
 - [lit-element](https://lit-element.polymer-project.org/)
 - [hyperapp](https://github.com/jorgebucaran/hyperapp)
+- [RxJS](https://rxjs-dev.firebaseapp.com/)
 - [Cycle.js](https://cycle.js.org)
 
 
