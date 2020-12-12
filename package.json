@@ -15,6 +15,7 @@
     "test:preact": "qunit test/render/preact.test.js",
     "test:react": "qunit test/render/react.test.js",
     "test:vue3": "qunit test/render/vue3.test.js",
+    "test:rxjs": "qunit test/render/rxjs.test.js",
     "test:cli": "qunit test/cli/**/*.test.js",
     "lint": "eslint .",
     "deploy": "git push && git push --tags && npm publish"

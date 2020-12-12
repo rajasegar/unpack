@@ -27,6 +27,7 @@ if (argv._.length < 2) {
         { title: 'Preact', value: 'Preact' },
         { title: 'lit-element', value: 'lit-element' },
         { title: 'hyperapp', value: 'hyperapp' },
+        { title: 'RxJS', value: 'RxJS' },
         { title: 'Cycle.js', value: 'Cycle' },
       ],
       initial: 0,

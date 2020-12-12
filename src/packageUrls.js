@@ -28,6 +28,10 @@ module.exports = {
       '@cycle/run': 'https://jspm.dev/@cycle/run',
       '@cycle/dom': 'https://jspm.dev/@cycle/dom',
     },
+    RxJS: {
+      rxjs: 'https://jspm.dev/rxjs',
+      'rxjs/operators': 'https://jspm.dev/rxjs/operators',
+    },
   },
   skypack: {
     React: {
@@ -49,7 +53,11 @@ module.exports = {
       'lit-element': 'https://cdn.skypack.dev/lit-element?min',
     },
     hyperapp: {
-      hyperapp: 'https://cdn.skypack.dev/hyperapp',
+      hyperapp: 'https://cdn.skypack.dev/hyperapp?min',
+    },
+    RxJS: {
+      rxjs: 'https://cdn.skypack.dev/rxjs?min',
+      'rxjs/operators': 'https://cdn.skypack.dev/rxjs/operators?min',
     },
   },
   unpkg: {
@@ -71,6 +79,11 @@ module.exports = {
     },
     hyperapp: {
       hyperapp: 'https://unpkg.com/hyperapp',
+    },
+    RxJS: {
+      rxjs: 'https://unpkg.com/rxjs@6.6.3/_esm2015/index.js',
+      'rxjs/operators':
+        'https://unpkg.com/rxjs@6.6.3/_esm2015/operators/index.js',
     },
   },
   esm: {
@@ -96,6 +109,10 @@ module.exports = {
       xstream: 'https://esm.sh/xstream',
       '@cycle/run': 'https://esm.sh/@cycle/run',
       '@cycle/dom': 'https://esm.sh/@cycle/dom',
+    },
+    RxJS: {
+      rxjs: 'https://esm.sh/rxjs',
+      'rxjs/operators': 'https://esm.sh/rxjs/operators',
     },
   },
   jsdelivr: {
@@ -129,6 +146,10 @@ module.exports = {
     },
     'lit-element': {
       'lit-element': 'https://esm.run/lit-element',
+    },
+    RxJS: {
+      rxjs: 'https://esm.run.com/rxjs',
+      'rxjs/operators': 'https://esm.run/rxjs/operators',
     },
   },
 };
