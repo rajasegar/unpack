@@ -132,6 +132,7 @@ Import maps are not yet mainstream, since not all the browsers implemented them 
 | lit-element   | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                |
 | hyperapp      | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :heavy_check_mark: | :heavy_check_mark: |
 | Cycle.js      | :x:                | :heavy_check_mark: | :x:                | :heavy_check_mark: | :x:                | :x:                |
+| RxJS          | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x:                | :x:                |
 
 Edited the above Markdown table with [tablesgenerator.com](https://www.tablesgenerator.com/markdown_tables)
 
