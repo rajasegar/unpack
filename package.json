@@ -1,6 +1,6 @@
 {
   "name": "@rajasegar/unpack",
-  "version": "1.5.0",
+  "version": "1.8.0",
   "description": "Create web apps without a bundler",
   "main": "index.js",
   "bin": {
@@ -8,7 +8,15 @@
   },
   "scripts": {
     "start": "bin/cli.js",
-    "test": "qunit",
+    "test": "npm-run-all test:*",
+    "test:cycle": "qunit test/render/cycle.test.js",
+    "test:hyperapp": "qunit test/render/hyperapp.test.js",
+    "test:lit-element": "qunit test/render/lit-element.test.js",
+    "test:preact": "qunit test/render/preact.test.js",
+    "test:react": "qunit test/render/react.test.js",
+    "test:vue3": "qunit test/render/vue3.test.js",
+    "test:rxjs": "qunit test/render/rxjs.test.js",
+    "test:cli": "qunit test/cli/**/*.test.js",
     "lint": "eslint .",
     "semantic-release": "semantic-release"
   },
@@ -36,7 +44,11 @@
     "eslint-plugin-prettier": "^3.1.4",
     "execa": "^4.1.0",
     "husky": "^7.0.2",
+    "express": "^4.17.1",
+    "get-port": "^5.1.1",
+    "npm-run-all": "^4.1.5",
     "prettier": "^2.1.2",
+    "puppeteer": "^5.5.0",
     "qunit": "^2.11.3",
     "tmp": "^0.2.1",
     "walk-sync": "^2.2.0"

@@ -5,11 +5,11 @@ const execa = require('execa');
 const walkSync = require('walk-sync');
 const fs = require('fs');
 
-const PROJECT_ROOT = path.join(__dirname, '..');
+const PROJECT_ROOT = path.join(__dirname, '../..');
 const EXECUTABLE_PATH = path.join(PROJECT_ROOT, 'bin', 'cli.js');
 const ROOT = process.cwd();
 
-const generateVueMarkup = require('../src/generateVueMarkup');
+const generateVue3Markup = require('../../src/generateVue3Markup');
 
 QUnit.module('unpack', function (hooks) {
   let cliProject;
@@ -25,13 +25,15 @@ QUnit.module('unpack', function (hooks) {
   });
 
   QUnit.module('new', function () {
-    QUnit.module('Vue', function () {
+    QUnit.module('Vue3', function () {
       QUnit.test('should generate with jspm', async function (assert) {
         let result = await execa(EXECUTABLE_PATH, [
           'new',
           'my-vue-app',
           '--template',
-          'Vue',
+          'Vue3',
+          '--cdn',
+          'jspm',
         ]);
 
         assert.equal(result.exitCode, 0, 'exited with zero');
@@ -42,7 +44,7 @@ QUnit.module('unpack', function (hooks) {
         ]);
 
         const actual = fs.readFileSync(
-          PROJECT_ROOT + '/src/templates/Vue/App.js',
+          PROJECT_ROOT + '/src/templates/Vue3/App.js',
           'utf8'
         );
         const expected = fs.readFileSync(
@@ -52,9 +54,9 @@ QUnit.module('unpack', function (hooks) {
         assert.equal(actual, expected);
 
         // index.html
-        const input = generateVueMarkup({
+        const input = generateVue3Markup({
           projectName: 'my-vue-app',
-          framework: 'Vue',
+          framework: 'Vue3',
           cdn: 'jspm',
         });
         const output = fs.readFileSync(

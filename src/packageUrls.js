@@ -20,6 +20,18 @@ module.exports = {
     'lit-element': {
       'lit-element': 'https://jspm.dev/lit-element',
     },
+    hyperapp: {
+      hyperapp: 'https://jspm.dev/hyperapp',
+    },
+    Cycle: {
+      xstream: 'https://jspm.dev/xstream',
+      '@cycle/run': 'https://jspm.dev/@cycle/run',
+      '@cycle/dom': 'https://jspm.dev/@cycle/dom',
+    },
+    RxJS: {
+      rxjs: 'https://jspm.dev/rxjs',
+      'rxjs/operators': 'https://jspm.dev/rxjs/operators',
+    },
   },
   skypack: {
     React: {
@@ -34,8 +46,18 @@ module.exports = {
     Vue: {
       vue: 'https://cdn.skypack.dev/vue?min',
     },
+    Vue3: {
+      vue: 'https://cdn.skypack.dev/vue@next/dist/vue.esm-browser.prod.js',
+    },
     'lit-element': {
       'lit-element': 'https://cdn.skypack.dev/lit-element?min',
+    },
+    hyperapp: {
+      hyperapp: 'https://cdn.skypack.dev/hyperapp?min',
+    },
+    RxJS: {
+      rxjs: 'https://cdn.skypack.dev/rxjs?min',
+      'rxjs/operators': 'https://cdn.skypack.dev/rxjs/operators?min',
     },
   },
   unpkg: {
@@ -55,6 +77,14 @@ module.exports = {
     'lit-element': {
       'lit-element': 'https://unpkg.com/lit-element?module',
     },
+    hyperapp: {
+      hyperapp: 'https://unpkg.com/hyperapp',
+    },
+    RxJS: {
+      rxjs: 'https://unpkg.com/rxjs@6.6.3/_esm2015/index.js',
+      'rxjs/operators':
+        'https://unpkg.com/rxjs@6.6.3/_esm2015/operators/index.js',
+    },
   },
   esm: {
     React: {
@@ -72,6 +102,18 @@ module.exports = {
     'lit-element': {
       'lit-element': 'https://esm.sh/lit-element',
     },
+    hyperapp: {
+      hyperapp: 'https://esm.sh/hyperapp',
+    },
+    Cycle: {
+      xstream: 'https://esm.sh/xstream',
+      '@cycle/run': 'https://esm.sh/@cycle/run',
+      '@cycle/dom': 'https://esm.sh/@cycle/dom',
+    },
+    RxJS: {
+      rxjs: 'https://esm.sh/rxjs',
+      'rxjs/operators': 'https://esm.sh/rxjs/operators',
+    },
   },
   jsdelivr: {
     React: {
@@ -81,6 +123,7 @@ module.exports = {
         'https://cdn.jsdelivr.net/npm/@esm-bundle/react-dom/esm/react-dom.production.min.js',
       htm: 'https://esm.sh/htm',
     },
+    /*
     Preact: {
       preact: 'https://esm.sh/preact',
       htm: 'https://esm.sh/htm',
@@ -88,11 +131,25 @@ module.exports = {
     Vue: {
       vue: 'https://esm.sh/vue',
     },
+    */
+    hyperapp: {
+      hyperapp: 'https://cdn.jsdelivr.net/npm/hyperapp',
+    },
   },
   'esm.run': {
     Preact: {
       preact: 'https://esm.run/preact',
-      htm: 'https://esm.run/htm'
-    }
-  }
+      htm: 'https://esm.run/htm',
+    },
+    hyperapp: {
+      hyperapp: 'https://esm.run/hyperapp',
+    },
+    'lit-element': {
+      'lit-element': 'https://esm.run/lit-element',
+    },
+    RxJS: {
+      rxjs: 'https://esm.run.com/rxjs',
+      'rxjs/operators': 'https://esm.run/rxjs/operators',
+    },
+  },
 };

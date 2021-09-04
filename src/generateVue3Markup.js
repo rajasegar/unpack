@@ -9,7 +9,7 @@ module.exports = function (options) {
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>${projectName}</title>
+  <title>${projectName} - Vue3 with ${cdn}</title>
 </head>
 <body>
   <div id="app"></app>
@@ -18,7 +18,7 @@ module.exports = function (options) {
   ${generateImportMap(framework, cdn)}
   </script>
   <script type="module-shim">
-    import Vue  from "vue";
+    import ${cdn === 'skypack' ? '* as Vue' : 'Vue'} from "vue";
     import App from './App.js';
 
     Vue.createApp(App).mount('#app');

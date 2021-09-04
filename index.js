@@ -8,6 +8,9 @@ const generatePreactMarkup = require('./src/generatePreactMarkup');
 const generateVueMarkup = require('./src/generateVueMarkup');
 const generateVue3Markup = require('./src/generateVue3Markup');
 const generateLitElementMarkup = require('./src/generateLitElementMarkup');
+const generateHyperappMarkup = require('./src/generateHyperappMarkup');
+const generateCycleMarkup = require('./src/generateCycleMarkup');
+const generateRxJSMarkup = require('./src/generateRxJSMarkup');
 
 module.exports = function (options) {
   const { projectName, framework } = options;
@@ -40,6 +43,18 @@ module.exports = function (options) {
 
         case 'lit-element':
           markup = generateLitElementMarkup(options);
+          break;
+
+        case 'hyperapp':
+          markup = generateHyperappMarkup(options);
+          break;
+
+        case 'Cycle':
+          markup = generateCycleMarkup(options);
+          break;
+
+        case 'RxJS':
+          markup = generateRxJSMarkup(options);
           break;
       }
 
