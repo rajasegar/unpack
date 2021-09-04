@@ -15,5 +15,5 @@ jobs:
     - name: ESLint
       run: |
         yarn lint
-        yarn test
+        yarn test:cli
 

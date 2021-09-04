@@ -16,7 +16,7 @@ jobs:
     - name: ESLint
       run: |
         yarn lint
-        yarn test
+        yarn test:cli
     - name: Release
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
