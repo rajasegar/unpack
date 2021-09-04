@@ -17,3 +17,8 @@ jobs:
       run: |
         yarn lint
         yarn test
+    - name: Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      run: npm run semantic-release

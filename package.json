@@ -10,7 +10,7 @@
     "start": "bin/cli.js",
     "test": "qunit",
     "lint": "eslint .",
-    "deploy": "git push && git push --tags && npm publish"
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "unpack",
@@ -21,18 +21,43 @@
   "author": "Rajasegar Chandran <rajasegar.c@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
     "minimist": "^1.2.5",
-    "prompts": "^2.4.0"
+    "prompts": "^2.4.0",
+    "semantic-release": "^17.4.7"
   },
   "devDependencies": {
+    "@commitlint/cli": "^13.1.0",
+    "@commitlint/config-conventional": "^13.1.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "execa": "^4.1.0",
+    "husky": "^7.0.2",
     "prettier": "^2.1.2",
     "qunit": "^2.11.3",
     "tmp": "^0.2.1",
     "walk-sync": "^2.2.0"
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "release(version): Release ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ],
+      "@semantic-release/github"
+    ]
   }
 }
