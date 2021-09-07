@@ -18,7 +18,7 @@ specifiers:
   prettier: 2.3.2
   prompts: ^2.4.0
   puppeteer: 5.5.0
-  qunit: 2.12.0
+  qunit: 2.17.0
   semantic-release: ^17.4.7
   tmp: 0.2.1
   walk-sync: 2.2.0
@@ -44,7 +44,7 @@ devDependencies:
   npm-run-all: 4.1.5
   prettier: 2.3.2
   puppeteer: 5.5.0
-  qunit: 2.12.0
+  qunit: 2.17.0
   tmp: 0.2.1
   walk-sync: 2.2.0
 
@@ -820,9 +820,9 @@ packages:
     engines: {node: '>=0.1.90'}
     dev: false
 
-  /commander/6.2.0:
-    resolution: {integrity: sha512-zP4jEKbe8SHzKJYQmq8Y9gYjtO/POJLgIdKgV7B9qNmABVFVc+ctqSX6iXh4mCpJfRBOabiZ2YKPg8ciDw6C+Q==}
-    engines: {node: '>= 6'}
+  /commander/7.1.0:
+    resolution: {integrity: sha512-pRxBna3MJe6HKnBGsDyMv8ETbptw3axEdYHoqNh7gu5oDcew8fs0xnivZGm06Ogk8zGAJ9VX+OPEr2GXEQK4dg==}
+    engines: {node: '>= 10'}
     dev: true
 
   /compare-func/2.0.0:
@@ -1655,8 +1655,8 @@ packages:
       type-fest: 0.20.2
     dev: true
 
-  /globalyzer/0.1.4:
-    resolution: {integrity: sha512-LeguVWaxgHN0MNbWC6YljNMzHkrCny9fzjmEUdnF1kQ7wATFD1RHFRqA1qxaX2tgxGENlcxjOflopBwj3YZiXA==}
+  /globalyzer/0.1.0:
+    resolution: {integrity: sha512-40oNTM9UfG6aBmuKxk/giHn5nQ8RVz/SS4Ir6zgzOv9/qC3kKZ9v4etGTcJbEl/NyVQH7FGU7d+X1egr57Md2Q==}
     dev: true
 
   /globby/11.0.4:
@@ -2030,10 +2030,6 @@ packages:
     engines: {node: '>= 0.6.0'}
     dev: false
 
-  /js-reporters/1.2.3:
-    resolution: {integrity: sha512-2YzWkHbbRu6LueEs5ZP3P1LqbECvAeUJYrjw3H4y1ofW06hqCS0AbzBtLwbr+Hke51bt9CUepJ/Fj1hlCRIF6A==}
-    dev: true
-
   /js-tokens/4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
 
@@ -2360,8 +2356,8 @@ packages:
     resolution: {integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==}
     engines: {node: 4.x || >=6.0.0}
 
-  /node-watch/0.7.0:
-    resolution: {integrity: sha512-OOBiglke5SlRQT5WYfwXTmYqTfXjcTNBHpalyHLtLxDpQYVpVRkJqabcch1kmwJsjV/J4OZuzEafeb4soqtFZA==}
+  /node-watch/0.7.1:
+    resolution: {integrity: sha512-UWblPYuZYrkCQCW5PxAwYSxaELNBLUckrTBBk8xr1/bUgyOkYYTsUcV4e3ytcazFEOyiRyiUrsG37pu6I0I05g==}
     engines: {node: '>=6'}
     dev: true
 
@@ -2823,15 +2819,14 @@ packages:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
 
-  /qunit/2.12.0:
-    resolution: {integrity: sha512-Lu3tbKziVzXTfseoEtTiiSAbSPB6SGU4Emc2uo8n+fbsXuRCLzfqPwJfAVJwKu9NdukX1V/L0qWf2UvmPX+QeA==}
+  /qunit/2.17.0:
+    resolution: {integrity: sha512-3zXO4T3KT8liCXYDqu68SmK6D7JgI80R6gUPGjzxXwh9rjwdmmx09YZhGLfT466PC/XlORr8xvxlNx3i3S72Rw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      commander: 6.2.0
-      js-reporters: 1.2.3
-      node-watch: 0.7.0
-      tiny-glob: 0.2.6
+      commander: 7.1.0
+      node-watch: 0.7.1
+      tiny-glob: 0.2.9
     dev: true
 
   /range-parser/1.2.1:
@@ -3376,10 +3371,10 @@ packages:
     dependencies:
       readable-stream: 3.6.0
 
-  /tiny-glob/0.2.6:
-    resolution: {integrity: sha512-A7ewMqPu1B5PWwC3m7KVgAu96Ch5LA0w4SnEN/LbDREj/gAD0nPWboRbn8YoP9ISZXqeNAlMvKSKoEuhcfK3Pw==}
+  /tiny-glob/0.2.9:
+    resolution: {integrity: sha512-g/55ssRPUjShh+xkfx9UPDXqhckHEsHr4Vd9zX55oSdGZc/MD0m3sferOkwWtp98bv+kcVfEHtRJgBVJzelrzg==}
     dependencies:
-      globalyzer: 0.1.4
+      globalyzer: 0.1.0
       globrex: 0.1.2
     dev: true
 
