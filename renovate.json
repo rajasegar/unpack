@@ -1,5 +1,14 @@
 {
   "extends": [
     "config:base"
-  ]
+  ],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "matchUpdateTypes": ["minor","patch"],
+      "automerge": true
+    }
+  ],
+  "prHourlyLimit": 2,
+  "prConcurrentLimit": 5
 }
