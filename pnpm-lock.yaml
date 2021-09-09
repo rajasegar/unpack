@@ -21,7 +21,7 @@ specifiers:
   qunit: 2.17.0
   semantic-release: ^17.4.7
   tmp: 0.2.1
-  walk-sync: 2.2.0
+  walk-sync: 3.0.0
 
 dependencies:
   '@semantic-release/changelog': 5.0.1_semantic-release@17.4.7
@@ -46,7 +46,7 @@ devDependencies:
   puppeteer: 5.5.0
   qunit: 2.17.0
   tmp: 0.2.1
-  walk-sync: 2.2.0
+  walk-sync: 3.0.0
 
 packages:
 
@@ -494,8 +494,8 @@ packages:
     engines: {node: '>= 6'}
     dev: false
 
-  /@types/minimatch/3.0.3:
-    resolution: {integrity: sha512-tHq6qdbT9U1IRSGf14CL0pUlULksvY9OZ+5eEgl1N7t+OA3tGvNpxJCzuKQlsNgCVwbAs670L1vcVQi8j9HjnA==}
+  /@types/minimatch/3.0.5:
+    resolution: {integrity: sha512-Klz949h02Gz2uZCMGwDUSDS1YBlTdDDgbWHi+81l29tQALUtvz4rAYi5uoVhE5Lagoq6DeqAUlbrHvW/mXDgdQ==}
     dev: true
 
   /@types/minimist/1.2.2:
@@ -2197,7 +2197,7 @@ packages:
     resolution: {integrity: sha512-daE62nS2ZQsDg9raM0IlZzLmI2u+7ZapXBwdoeBUKAYERPDDIc0qNqA8E0Rp2D+gspKR7BgIFP52GeujaGXWeQ==}
     engines: {node: 6.* || 8.* || >= 10.*}
     dependencies:
-      '@types/minimatch': 3.0.3
+      '@types/minimatch': 3.0.5
       minimatch: 3.0.4
     dev: true
 
@@ -3523,11 +3523,11 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /walk-sync/2.2.0:
-    resolution: {integrity: sha512-IC8sL7aB4/ZgFcGI2T1LczZeFWZ06b3zoHH7jBPyHxOtIIz1jppWHjjEXkOFvFojBVAK9pV7g47xOZ4LW3QLfg==}
-    engines: {node: 8.* || >= 10.*}
+  /walk-sync/3.0.0:
+    resolution: {integrity: sha512-41TvKmDGVpm2iuH7o+DAOt06yyu/cSHpX3uzAwetzASvlNtVddgIjXIb2DfB/Wa20B1Jo86+1Dv1CraSU7hWdw==}
+    engines: {node: 10.* || >= 12.*}
     dependencies:
-      '@types/minimatch': 3.0.3
+      '@types/minimatch': 3.0.5
       ensure-posix-path: 1.1.1
       matcher-collection: 2.0.1
       minimatch: 3.0.4
