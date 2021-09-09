@@ -4053,10 +4053,10 @@ quick-lru@^4.0.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-4.0.1.tgz"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-qunit@2.17.0:
-  version "2.17.0"
-  resolved "https://registry.npmjs.org/qunit/-/qunit-2.17.0.tgz"
-  integrity sha512-3zXO4T3KT8liCXYDqu68SmK6D7JgI80R6gUPGjzxXwh9rjwdmmx09YZhGLfT466PC/XlORr8xvxlNx3i3S72Rw==
+qunit@2.17.1:
+  version "2.17.1"
+  resolved "https://registry.npmjs.org/qunit/-/qunit-2.17.1.tgz"
+  integrity sha512-Gx1tpSfYbjRe4TRKCVBLlnCaVThF5Pdnmbbv/zLFfgWKddeQHV/eNi1BG392hw4gEDh2sflMj8kmPJlT7+kVMA==
   dependencies:
     commander "7.1.0"
     node-watch "0.7.1"
