@@ -8,7 +8,7 @@ specifiers:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0
   eslint-plugin-node: 11.1.0
-  eslint-plugin-prettier: 3.4.1
+  eslint-plugin-prettier: 4.0.0
   execa: 5.1.1
   express: 4.17.1
   get-port: 5.1.1
@@ -36,7 +36,7 @@ devDependencies:
   eslint: 7.32.0
   eslint-config-prettier: 8.3.0_eslint@7.32.0
   eslint-plugin-node: 11.1.0_eslint@7.32.0
-  eslint-plugin-prettier: 3.4.1_5559632aa3c77deec3ae5c2ea6ed0f36
+  eslint-plugin-prettier: 4.0.0_5559632aa3c77deec3ae5c2ea6ed0f36
   execa: 5.1.1
   express: 4.17.1
   get-port: 5.1.1
@@ -1182,13 +1182,13 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/3.4.1_5559632aa3c77deec3ae5c2ea6ed0f36:
-    resolution: {integrity: sha512-htg25EUYUeIhKHXjOinK4BgCcDwtLHjqaxCDsMy5nbnUMkKFvIhMVCp+5GFUXQ4Nr8lBsPqtGAqBenbpFqAA2g==}
+  /eslint-plugin-prettier/4.0.0_5559632aa3c77deec3ae5c2ea6ed0f36:
+    resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
     engines: {node: '>=6.0.0'}
     peerDependencies:
-      eslint: '>=5.0.0'
+      eslint: '>=7.28.0'
       eslint-config-prettier: '*'
-      prettier: '>=1.13.0'
+      prettier: '>=2.0.0'
     peerDependenciesMeta:
       eslint-config-prettier:
         optional: true
