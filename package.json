@@ -49,7 +49,7 @@
     "npm-run-all": "4.1.5",
     "prettier": "2.4.1",
     "puppeteer": "10.2.0",
-    "qunit": "2.17.1",
+    "qunit": "2.17.2",
     "tmp": "0.2.1",
     "walk-sync": "3.0.0"
   },
