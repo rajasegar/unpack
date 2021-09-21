@@ -17,7 +17,7 @@ specifiers:
   npm-run-all: 4.1.5
   prettier: 2.4.1
   prompts: ^2.4.0
-  puppeteer: 10.2.0
+  puppeteer: 10.4.0
   qunit: 2.17.2
   semantic-release: ^17.4.7
   tmp: 0.2.1
@@ -43,7 +43,7 @@ devDependencies:
   husky: 7.0.2
   npm-run-all: 4.1.5
   prettier: 2.4.1
-  puppeteer: 10.2.0
+  puppeteer: 10.4.0
   qunit: 2.17.2
   tmp: 0.2.1
   walk-sync: 3.0.0
@@ -2777,8 +2777,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /puppeteer/10.2.0:
-    resolution: {integrity: sha512-OR2CCHRashF+f30+LBOtAjK6sNtz2HEyTr5FqAvhf8lR/qB3uBRoIZOwQKgwoyZnMBsxX7ZdazlyBgGjpnkiMw==}
+  /puppeteer/10.4.0:
+    resolution: {integrity: sha512-2cP8mBoqnu5gzAVpbZ0fRaobBWZM8GEUF4I1F6WbgHrKV/rz7SX8PG2wMymZgD0wo0UBlg2FBPNxlF/xlqW6+w==}
     engines: {node: '>=10.18.1'}
     requiresBuild: true
     dependencies:
