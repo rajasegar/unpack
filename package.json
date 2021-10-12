@@ -1,6 +1,6 @@
 {
   "name": "@rajasegar/unpack",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Create web apps without a bundler",
   "main": "index.js",
   "bin": {
@@ -54,7 +54,9 @@
     "walk-sync": "3.0.0"
   },
   "release": {
-    "branches": ["main"],
+    "branches": [
+      "main"
+    ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
