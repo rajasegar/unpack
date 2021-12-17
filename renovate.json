@@ -4,7 +4,7 @@
   ],
   "packageRules": [
     {
-      "depTypeList": ["devDependencies"],
+      "depTypeList": ["devDependencies", "dependencies"],
       "matchUpdateTypes": ["minor","patch"],
       "automerge": true
     }
