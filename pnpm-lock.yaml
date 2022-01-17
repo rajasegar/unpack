@@ -17,7 +17,7 @@ specifiers:
   npm-run-all: 4.1.5
   prettier: 2.5.1
   prompts: ^2.4.0
-  puppeteer: 13.0.1
+  puppeteer: 13.1.0
   qunit: 2.17.2
   semantic-release: ^18.0.0
   tmp: 0.2.1
@@ -43,7 +43,7 @@ devDependencies:
   husky: 7.0.4
   npm-run-all: 4.1.5
   prettier: 2.5.1
-  puppeteer: 13.0.1
+  puppeteer: 13.1.0
   qunit: 2.17.2
   tmp: 0.2.1
   walk-sync: 3.0.0
@@ -1026,8 +1026,8 @@ packages:
     resolution: {integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=}
     dev: true
 
-  /devtools-protocol/0.0.937139:
-    resolution: {integrity: sha512-daj+rzR3QSxsPRy5vjjthn58axO8c11j58uY0lG5vvlJk/EiOdCWOptGdkXDjtuRHr78emKq0udHCXM4trhoDQ==}
+  /devtools-protocol/0.0.948846:
+    resolution: {integrity: sha512-5fGyt9xmMqUl2VI7+rnUkKCiAQIpLns8sfQtTENy5L70ktbNw0Z3TFJ1JoFNYdx/jffz4YXU45VF75wKZD7sZQ==}
     dev: true
 
   /diff/4.0.2:
@@ -2760,13 +2760,13 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /puppeteer/13.0.1:
-    resolution: {integrity: sha512-wqGIx59LzYqWhYcJQphMT+ux0sgatEUbjKG0lbjJxNVqVIT3ZC5m4Bvmq2gHE3qhb63EwS+rNkql08bm4BvO0A==}
+  /puppeteer/13.1.0:
+    resolution: {integrity: sha512-6rf16giGGLFMh1VrB89zwaTeA90E+tbpq5o1R1Z+a1z9Hrhrj1MlT8Pe0kaecUV3kjpLRaukCRVXw1dp/gbYEw==}
     engines: {node: '>=10.18.1'}
     requiresBuild: true
     dependencies:
       debug: 4.3.2
-      devtools-protocol: 0.0.937139
+      devtools-protocol: 0.0.948846
       extract-zip: 2.0.1
       https-proxy-agent: 5.0.0
       node-fetch: 2.6.5
