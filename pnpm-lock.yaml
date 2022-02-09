@@ -17,7 +17,7 @@ specifiers:
   npm-run-all: 4.1.5
   prettier: 2.5.1
   prompts: ^2.4.0
-  puppeteer: 13.2.0
+  puppeteer: 13.3.0
   qunit: 2.17.2
   semantic-release: ^18.0.0
   tmp: 0.2.1
@@ -43,7 +43,7 @@ devDependencies:
   husky: 7.0.4
   npm-run-all: 4.1.5
   prettier: 2.5.1
-  puppeteer: 13.2.0
+  puppeteer: 13.3.0
   qunit: 2.17.2
   tmp: 0.2.1
   walk-sync: 3.0.0
@@ -929,6 +929,14 @@ packages:
 
   /create-require/1.1.1:
     resolution: {integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==}
+    dev: true
+
+  /cross-fetch/3.1.5:
+    resolution: {integrity: sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw==}
+    dependencies:
+      node-fetch: 2.6.7
+    transitivePeerDependencies:
+      - encoding
     dev: true
 
   /cross-spawn/6.0.5:
@@ -2785,23 +2793,23 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /puppeteer/13.2.0:
-    resolution: {integrity: sha512-OSRcIgPq78Cjysm4AOvGgGN464qugfYZ1bJRpPZ7d6c2P/zVQmACblIiB56frVoSuHpvqo+ZphFJo7kF9V5iEg==}
+  /puppeteer/13.3.0:
+    resolution: {integrity: sha512-qEsXUQhF4mcF++0O5N7mW7jcVXqztC9fWYj14s2xNrd16SD1U/rCfV0BYE6/MBK7sHXi400qJlxWv7INYytZtQ==}
     engines: {node: '>=10.18.1'}
     requiresBuild: true
     dependencies:
+      cross-fetch: 3.1.5
       debug: 4.3.3
       devtools-protocol: 0.0.960912
       extract-zip: 2.0.1
       https-proxy-agent: 5.0.0
-      node-fetch: 2.6.7
       pkg-dir: 4.2.0
       progress: 2.0.3
       proxy-from-env: 1.1.0
       rimraf: 3.0.2
       tar-fs: 2.1.1
       unbzip2-stream: 1.4.3
-      ws: 8.2.3
+      ws: 8.5.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -3606,8 +3614,8 @@ packages:
   /wrappy/1.0.2:
     resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=}
 
-  /ws/8.2.3:
-    resolution: {integrity: sha512-wBuoj1BDpC6ZQ1B7DWQBYVLphPWkm8i9Y0/3YdHjHKHiohOJ1ws+3OccDWtH+PoC9DZD5WOTrJvNbWvjS6JWaA==}
+  /ws/8.5.0:
+    resolution: {integrity: sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
