@@ -18,7 +18,7 @@ specifiers:
   prettier: 2.5.1
   prompts: ^2.4.0
   puppeteer: 13.3.2
-  qunit: 2.17.2
+  qunit: 2.18.0
   semantic-release: ^18.0.0
   tmp: 0.2.1
   walk-sync: 3.0.0
@@ -44,7 +44,7 @@ devDependencies:
   npm-run-all: 4.1.5
   prettier: 2.5.1
   puppeteer: 13.3.2
-  qunit: 2.17.2
+  qunit: 2.18.0
   tmp: 0.2.1
   walk-sync: 3.0.0
 
@@ -2371,8 +2371,8 @@ packages:
     dependencies:
       whatwg-url: 5.0.0
 
-  /node-watch/0.7.2:
-    resolution: {integrity: sha512-g53VjSARRv1JdST0LZRIg8RiuLr1TaBbVPsVvxh0/0Ymvi0xYUjDuoqQQAWtHJQUXhiShowPT/aXKNeHBcyQsw==}
+  /node-watch/0.7.3:
+    resolution: {integrity: sha512-3l4E8uMPY1HdMMryPRUAl+oIHtXtyiTlIiESNSVSNxcPfzAFzeTbXFQkZfAwBbo0B1qMSG8nUABx+Gd+YrbKrQ==}
     engines: {node: '>=6'}
     dev: true
 
@@ -2835,13 +2835,13 @@ packages:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
 
-  /qunit/2.17.2:
-    resolution: {integrity: sha512-17isVvuOmALzsPjiV7wFg/6O5vJYXBrQZPwocfQSSh0I/rXvfX7bKMFJ4GMVW3U4P8r2mBeUy8EAngti4QD2Vw==}
+  /qunit/2.18.0:
+    resolution: {integrity: sha512-Xw/zUm5t1JY8SNErki/qtw4fCuaaOZL+bPloZU+0kto+fO8j1JV9MQWqXO4kATfhEyJohlsKZpfg1HF7GOkpXw==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       commander: 7.2.0
-      node-watch: 0.7.2
+      node-watch: 0.7.3
       tiny-glob: 0.2.9
     dev: true
 

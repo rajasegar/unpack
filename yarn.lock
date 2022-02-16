@@ -3565,10 +3565,10 @@ node-gyp@^8.2.0:
     tar "^6.1.2"
     which "^2.0.2"
 
-node-watch@0.7.2:
-  version "0.7.2"
-  resolved "https://registry.npmjs.org/node-watch/-/node-watch-0.7.2.tgz"
-  integrity sha512-g53VjSARRv1JdST0LZRIg8RiuLr1TaBbVPsVvxh0/0Ymvi0xYUjDuoqQQAWtHJQUXhiShowPT/aXKNeHBcyQsw==
+node-watch@0.7.3:
+  version "0.7.3"
+  resolved "https://registry.npmjs.org/node-watch/-/node-watch-0.7.3.tgz"
+  integrity sha512-3l4E8uMPY1HdMMryPRUAl+oIHtXtyiTlIiESNSVSNxcPfzAFzeTbXFQkZfAwBbo0B1qMSG8nUABx+Gd+YrbKrQ==
 
 nopt@*, nopt@^5.0.0:
   version "5.0.0"
@@ -4332,13 +4332,13 @@ quick-lru@^4.0.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-4.0.1.tgz"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-qunit@2.17.2:
-  version "2.17.2"
-  resolved "https://registry.npmjs.org/qunit/-/qunit-2.17.2.tgz"
-  integrity sha512-17isVvuOmALzsPjiV7wFg/6O5vJYXBrQZPwocfQSSh0I/rXvfX7bKMFJ4GMVW3U4P8r2mBeUy8EAngti4QD2Vw==
+qunit@2.18.0:
+  version "2.18.0"
+  resolved "https://registry.npmjs.org/qunit/-/qunit-2.18.0.tgz"
+  integrity sha512-Xw/zUm5t1JY8SNErki/qtw4fCuaaOZL+bPloZU+0kto+fO8j1JV9MQWqXO4kATfhEyJohlsKZpfg1HF7GOkpXw==
   dependencies:
     commander "7.2.0"
-    node-watch "0.7.2"
+    node-watch "0.7.3"
     tiny-glob "0.2.9"
 
 range-parser@~1.2.1:
