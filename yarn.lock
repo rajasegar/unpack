@@ -2198,9 +2198,9 @@ gauge@^3.0.0:
     wide-align "^1.1.2"
 
 gauge@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/gauge/-/gauge-4.0.0.tgz#afba07aa0374a93c6219603b1fb83eaa2264d8f8"
-  integrity sha512-F8sU45yQpjQjxKkm1UOAhf0U/O0aFt//Fl7hsrNVto+patMHjs7dPI9mFOGUKbhrgKm0S3EjW3scMFuQmWSROw==
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/gauge/-/gauge-4.0.1.tgz#82984bc08c90357d60b0a46c03a296beb1affec4"
+  integrity sha512-zJ4jePUHR8cceduZ53b6temRalyGpkC2Kc2r3ecNphmL+uWNoJ3YcOcUjpbG6WwoE/Ef6/+aEZz63neI2WIa1Q==
   dependencies:
     ansi-regex "^5.0.1"
     aproba "^1.0.3 || ^2.0.0"
@@ -2240,10 +2240,10 @@ get-intrinsic@^1.0.2, get-intrinsic@^1.1.0, get-intrinsic@^1.1.1:
     has "^1.0.3"
     has-symbols "^1.0.1"
 
-get-port@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.npmjs.org/get-port/-/get-port-6.0.0.tgz"
-  integrity sha512-qSVkVF6Eq1GdL/cBNiFuP4nUHMF7OEMTqEjC6alR2N90u8BFOoO0PFhNTX2QtAUoGrz8NnrSWj85TZ8YXZ6LOA==
+get-port@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/get-port/-/get-port-6.1.0.tgz"
+  integrity sha512-JKnPFW/G2ZRirH/25sLK1aLBQktJfQLixzMMuMBP8A2G/ivSaIwdTnlJeO7PWeyhyIGVorezNf6+CXZU9i0cIQ==
 
 get-stream@^5.0.0, get-stream@^5.1.0:
   version "5.2.0"
@@ -3212,9 +3212,9 @@ make-fetch-happen@*, make-fetch-happen@^9.0.1, make-fetch-happen@^9.1.0:
     ssri "^8.0.0"
 
 make-fetch-happen@^10.0.1:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.0.2.tgz#0afb38d2f951b17ebc482b0b16c8d77f39dfe389"
-  integrity sha512-JSFLK53NJP22FL/eAGOyKsWbc2G3v+toPMD7Dq9PJKQCvK0i3t8hGkKxe+3YZzwYa+c0kxRHu7uxH3fvO+rsaA==
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.0.3.tgz#94bbe675cf62a811dbab59668052388a078beaf2"
+  integrity sha512-CzarPHynPpHjhF5in/YapnO44rSZeYX5VCMfdXa99+gLwpbfFLh20CWa6dP/taV9Net9PWJwXNKtp/4ZTCQnag==
   dependencies:
     agentkeepalive "^4.2.0"
     cacache "^15.3.0"
