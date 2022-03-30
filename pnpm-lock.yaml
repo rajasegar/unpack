@@ -18,7 +18,7 @@ specifiers:
   prettier: 2.6.1
   prompts: ^2.4.0
   puppeteer: 13.5.1
-  qunit: 2.18.0
+  qunit: 2.18.1
   semantic-release: ^18.0.0
   tmp: 0.2.1
   walk-sync: 3.0.0
@@ -44,7 +44,7 @@ devDependencies:
   npm-run-all: 4.1.5
   prettier: 2.6.1
   puppeteer: 13.5.1
-  qunit: 2.18.0
+  qunit: 2.18.1
   tmp: 0.2.1
   walk-sync: 3.0.0
 
@@ -2830,8 +2830,8 @@ packages:
     resolution: {integrity: sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==}
     engines: {node: '>=8'}
 
-  /qunit/2.18.0:
-    resolution: {integrity: sha512-Xw/zUm5t1JY8SNErki/qtw4fCuaaOZL+bPloZU+0kto+fO8j1JV9MQWqXO4kATfhEyJohlsKZpfg1HF7GOkpXw==}
+  /qunit/2.18.1:
+    resolution: {integrity: sha512-A2Adgr/DeMQOJZFVllyQi2wiGJVVXGSRRwMe39fNfuuftUYHHpGRTWUhBa8wNblunCAOUCt+1uFcg1L7NaxQTA==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
