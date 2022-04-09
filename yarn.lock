@@ -239,18 +239,18 @@
     fastq "^1.6.0"
 
 "@npmcli/arborist@*":
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.0.4.tgz#b10099088e74c376f4b0df96ea8316085e8e689b"
-  integrity sha512-w3N7gvCLBS1uwOmGEYAlE81bGzLc+mSbfMkWVT++y4G7w4fhjLMmVCJlerOLIf8u5Xsf5Js1tT6UClhGz5p19Q==
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.0.5.tgz#e38b63cabc496840bb329182fe6bee18ad9f3ee2"
+  integrity sha512-96UwbW4ASOMg/ltORxx36njDiIy5HYdWR5HOvroYeVhoSOLYKwlixALowNK7ZBt49MOaJVCfLMyu9on71gQC/g==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/installed-package-contents" "^1.0.7"
     "@npmcli/map-workspaces" "^2.0.0"
     "@npmcli/metavuln-calculator" "^3.0.1"
-    "@npmcli/move-file" "^1.1.0"
+    "@npmcli/move-file" "^2.0.0"
     "@npmcli/name-from-folder" "^1.0.1"
-    "@npmcli/node-gyp" "^1.0.3"
-    "@npmcli/package-json" "^1.0.1"
+    "@npmcli/node-gyp" "^2.0.0"
+    "@npmcli/package-json" "^2.0.0"
     "@npmcli/run-script" "^3.0.0"
     bin-links "^3.0.0"
     cacache "^16.0.0"
@@ -260,7 +260,7 @@
     mkdirp "^1.0.4"
     mkdirp-infer-owner "^2.0.0"
     nopt "^5.0.0"
-    npm-install-checks "^4.0.0"
+    npm-install-checks "^5.0.0"
     npm-package-arg "^9.0.0"
     npm-pick-manifest "^7.0.0"
     npm-registry-fetch "^13.0.0"
@@ -274,8 +274,8 @@
     readdir-scoped-modules "^1.1.0"
     rimraf "^3.0.2"
     semver "^7.3.5"
-    ssri "^8.0.1"
-    treeverse "^1.0.4"
+    ssri "^9.0.0"
+    treeverse "^2.0.0"
     walk-up-path "^1.0.0"
 
 "@npmcli/arborist@^2.3.0", "@npmcli/arborist@^2.5.0":
@@ -370,12 +370,12 @@
     which "^2.0.2"
 
 "@npmcli/git@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/git/-/git-3.0.0.tgz#466a18980da6b646a8112a7676688ae5347deba3"
-  integrity sha512-xfSBJ+KBMZWWqRHFbEgIaXG/LtELHrQZMJ72Gkb3yWdHysu/7+VGOs8ME0c3td7QNQX57Ggo3kYL6ylcd70/kA==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/git/-/git-3.0.1.tgz#049b99b1381a2ddf7dc56ba3e91eaf76ca803a8d"
+  integrity sha512-UU85F/T+F1oVn3IsB/L6k9zXIMpXBuUBE25QDH0SsURwT6IOBqkC7M16uqo2vVZIyji3X1K4XH9luip7YekH1A==
   dependencies:
-    "@npmcli/promise-spawn" "^1.3.2"
-    lru-cache "^7.3.1"
+    "@npmcli/promise-spawn" "^3.0.0"
+    lru-cache "^7.4.4"
     mkdirp "^1.0.4"
     npm-pick-manifest "^7.0.0"
     proc-log "^2.0.0"
@@ -422,19 +422,27 @@
     semver "^7.3.2"
 
 "@npmcli/metavuln-calculator@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@npmcli/metavuln-calculator/-/metavuln-calculator-3.0.1.tgz#b486beee5f4ccde54b138f1e399aa0da8b4ab694"
-  integrity sha512-XnaD5UfV/qQoIEPWnfBntw8Ik5HWkxEc1wCmfHxhogdj06bwP51nAyU3QLBdhnFsmQQElqV0S8eHXn2zEXnSZw==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/metavuln-calculator/-/metavuln-calculator-3.1.0.tgz#b1c2f0991c4f2d992b1615a54d4358c05efc3702"
+  integrity sha512-Q5fbQqGDlYqk7kWrbg6E2j/mtqQjZop0ZE6735wYA1tYNHguIDjAuWs+kFb5rJCkLIlXllfapvsyotYKiZOTBA==
   dependencies:
     cacache "^16.0.0"
     json-parse-even-better-errors "^2.3.1"
     pacote "^13.0.3"
     semver "^7.3.5"
 
-"@npmcli/move-file@^1.0.1", "@npmcli/move-file@^1.1.0", "@npmcli/move-file@^1.1.2":
+"@npmcli/move-file@^1.0.1", "@npmcli/move-file@^1.1.0":
   version "1.1.2"
   resolved "https://registry.npmjs.org/@npmcli/move-file/-/move-file-1.1.2.tgz"
   integrity sha512-1SUf/Cg2GzGDyaf15aR9St9TWlb+XvbZXWpDx8YKs7MLzMH/BCeopv+y9vzrzgkfykCGuWOlSu3mZhj2+FQcrg==
+  dependencies:
+    mkdirp "^1.0.4"
+    rimraf "^3.0.2"
+
+"@npmcli/move-file@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/move-file/-/move-file-2.0.0.tgz#417f585016081a0184cef3e38902cd917a9bbd02"
+  integrity sha512-UR6D5f4KEGWJV6BGPH3Qb2EtgH+t+1XQ1Tt85c7qicN6cezzuHPdZwwAxqZr4JLtnQu0LZsTza/5gmNmSl8XLg==
   dependencies:
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
@@ -449,10 +457,10 @@
   resolved "https://registry.npmjs.org/@npmcli/node-gyp/-/node-gyp-1.0.2.tgz"
   integrity sha512-yrJUe6reVMpktcvagumoqD9r08fH1iRo01gn1u0zoCApa9lnZGEigVKUd2hzsCId4gdtkZZIVscLhNxMECKgRg==
 
-"@npmcli/node-gyp@^1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@npmcli/node-gyp/-/node-gyp-1.0.3.tgz#a912e637418ffc5f2db375e93b85837691a43a33"
-  integrity sha512-fnkhw+fmX65kiLqk6E3BFLXNC26rUhK90zVwe2yncPliVT/Qos3xjhTLE59Df8KnPlcwIERXKVlU1bXoUQ+liA==
+"@npmcli/node-gyp@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/node-gyp/-/node-gyp-2.0.0.tgz#8c20e53e34e9078d18815c1d2dda6f2420d75e35"
+  integrity sha512-doNI35wIe3bBaEgrlPfdJPaCpUR89pJWep4Hq3aRdh6gKazIVWfs0jHttvSSoq47ZXgC7h73kDsUl8AoIQUB+A==
 
 "@npmcli/package-json@*", "@npmcli/package-json@^1.0.1":
   version "1.0.1"
@@ -461,10 +469,24 @@
   dependencies:
     json-parse-even-better-errors "^2.3.1"
 
+"@npmcli/package-json@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/package-json/-/package-json-2.0.0.tgz#3bbcf4677e21055adbe673d9f08c9f9cde942e4a"
+  integrity sha512-42jnZ6yl16GzjWSH7vtrmWyJDGVa/LXPdpN2rcUWolFjc9ON2N3uz0qdBbQACfmhuJZ2lbKYtmK5qx68ZPLHMA==
+  dependencies:
+    json-parse-even-better-errors "^2.3.1"
+
 "@npmcli/promise-spawn@^1.2.0", "@npmcli/promise-spawn@^1.3.2":
   version "1.3.2"
   resolved "https://registry.npmjs.org/@npmcli/promise-spawn/-/promise-spawn-1.3.2.tgz"
   integrity sha512-QyAGYo/Fbj4MXeGdJcFzZ+FkDkomfRBrPM+9QYJSg+PxgAUL+LU3FneQk37rKR2/zjqkCV1BLHccX98wRXG3Sg==
+  dependencies:
+    infer-owner "^1.0.4"
+
+"@npmcli/promise-spawn@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@npmcli/promise-spawn/-/promise-spawn-3.0.0.tgz#53283b5f18f855c6925f23c24e67c911501ef573"
+  integrity sha512-s9SgS+p3a9Eohe68cSI3fi+hpcZUmXq5P7w0kMlAsWVtR7XbK3ptkZqKT2cK1zLDObJ3sR+8P59sJE0w/KTL1g==
   dependencies:
     infer-owner "^1.0.4"
 
@@ -479,12 +501,12 @@
     read-package-json-fast "^2.0.1"
 
 "@npmcli/run-script@^3.0.0", "@npmcli/run-script@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-3.0.1.tgz#9d10b46586300074cc9e53ef320130a69567e1ce"
-  integrity sha512-o2fkld5hYwu9sKYzoXTpqEocMnDLaigobaPzLaGB63k/ExmLBTaB+KpfKlpcIePPnuP8RFR+0GDI4KopJCM6Xg==
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-3.0.2.tgz#3e9116d831f4539bf292d18b015977a6118997ee"
+  integrity sha512-vdjD/PMBl+OX9j9C9irx5sCCIKfp2PWkpPNH9zxvlJAfSZ3Qp5aU412v+O3PFJl3R1PFNwuyChCqHg4ma6ci2Q==
   dependencies:
-    "@npmcli/node-gyp" "^1.0.3"
-    "@npmcli/promise-spawn" "^1.3.2"
+    "@npmcli/node-gyp" "^2.0.0"
+    "@npmcli/promise-spawn" "^3.0.0"
     node-gyp "^9.0.0"
     read-package-json-fast "^2.0.3"
 
@@ -1006,14 +1028,14 @@ bin-links@^2.2.1:
     write-file-atomic "^3.0.3"
 
 bin-links@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/bin-links/-/bin-links-3.0.0.tgz#8273063638919f6ba4fbe890de9438c1b3adf0b7"
-  integrity sha512-fC7kPWcEkAWBgCKxmAMqZldlIeHsXwQy9JXzrppAVQiukGiDKxmYesJcBKWu6UMwx/5GOfo10wtK/4zy+Xt/mg==
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/bin-links/-/bin-links-3.0.1.tgz#cc70ffb481988b22c527d3e6e454787876987a49"
+  integrity sha512-9vx+ypzVhASvHTS6K+YSGf7nwQdANoz7v6MTC0aCtYnOEZ87YvMf81aY737EZnGZdpbRM3sfWjO9oWkKmuIvyQ==
   dependencies:
-    cmd-shim "^4.0.1"
+    cmd-shim "^5.0.0"
     mkdirp-infer-owner "^2.0.0"
     npm-normalize-package-bin "^1.0.0"
-    read-cmd-shim "^2.0.0"
+    read-cmd-shim "^3.0.0"
     rimraf "^3.0.0"
     write-file-atomic "^4.0.0"
 
@@ -1134,12 +1156,12 @@ cacache@*, cacache@^15.0.3, cacache@^15.0.5, cacache@^15.2.0:
     unique-filename "^1.1.1"
 
 cacache@^16.0.0, cacache@^16.0.2:
-  version "16.0.3"
-  resolved "https://registry.yarnpkg.com/cacache/-/cacache-16.0.3.tgz#0b6314bde969bd4098b03a5f90a351e8a1483f48"
-  integrity sha512-eC7wYodNCVb97kuHGk5P+xZsvUJHkhSEOyNwkenqQPAsOtrTjvWOE5vSPNBpz9d8X3acIf6w2Ub5s4rvOCTs4g==
+  version "16.0.4"
+  resolved "https://registry.yarnpkg.com/cacache/-/cacache-16.0.4.tgz#66877ae82717ade4d1416d5b3caa3a870f2c6d0c"
+  integrity sha512-U0D4wF3/W8ZgK4qDA5fTtOVSr0gaDfd5aa7tUdAV0uukVWKsAIn6SzXQCoVlg7RWZiJa+bcsM3/pXLumGaL2Ug==
   dependencies:
     "@npmcli/fs" "^2.1.0"
-    "@npmcli/move-file" "^1.1.2"
+    "@npmcli/move-file" "^2.0.0"
     chownr "^2.0.0"
     fs-minipass "^2.1.0"
     glob "^7.2.0"
@@ -1153,7 +1175,7 @@ cacache@^16.0.0, cacache@^16.0.2:
     p-map "^4.0.0"
     promise-inflight "^1.0.1"
     rimraf "^3.0.2"
-    ssri "^8.0.1"
+    ssri "^9.0.0"
     tar "^6.1.11"
     unique-filename "^1.1.1"
 
@@ -1287,6 +1309,13 @@ cmd-shim@^4.0.1:
   version "4.1.0"
   resolved "https://registry.npmjs.org/cmd-shim/-/cmd-shim-4.1.0.tgz"
   integrity sha512-lb9L7EM4I/ZRVuljLPEtUJOP+xiQVknZ4ZMpMgEp4JzNldPb27HU03hi6K1/6CoIuit/Zm/LQXySErFeXxDprw==
+  dependencies:
+    mkdirp-infer-owner "^2.0.0"
+
+cmd-shim@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/cmd-shim/-/cmd-shim-5.0.0.tgz#8d0aaa1a6b0708630694c4dbde070ed94c707724"
+  integrity sha512-qkCtZ59BidfEwHltnJwkyVZn+XQojdAySM1D1gSeh11Z4pW1Kpolkyo53L5noc0nrxmIvyFwTmJRo4xs7FFLPw==
   dependencies:
     mkdirp-infer-owner "^2.0.0"
 
@@ -1867,10 +1896,10 @@ eslint-visitor-keys@^3.3.0:
   resolved "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-3.3.0.tgz"
   integrity sha512-mQ+suqKJVyeuwGYHAdjMFqjCyfl8+Ldnxuyp3ldiMBFKkvytrXUZWaiPCEav8qDHKty44bD+qV1IP4T+w+xXRA==
 
-eslint@8.12.0:
-  version "8.12.0"
-  resolved "https://registry.npmjs.org/eslint/-/eslint-8.12.0.tgz"
-  integrity sha512-it1oBL9alZg1S8UycLm5YDMAkIhtH6FtAzuZs6YvoGVldWjbS08BkAdb/ymP9LlAyq8koANu32U7Ib/w+UNh8Q==
+eslint@8.13.0:
+  version "8.13.0"
+  resolved "https://registry.npmjs.org/eslint/-/eslint-8.13.0.tgz"
+  integrity sha512-D+Xei61eInqauAyTJ6C0q6x9mx7kTUC1KZ0m0LSEexR0V+e94K12LmWX076ZIsldwfQ2RONdaJe0re0TRGQbRQ==
   dependencies:
     "@eslint/eslintrc" "^1.2.1"
     "@humanwhocodes/config-array" "^0.9.2"
@@ -2434,9 +2463,9 @@ graceful-fs@*, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, grace
   integrity sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==
 
 graceful-fs@^4.2.6:
-  version "4.2.9"
-  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
-  integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
+  version "4.2.10"
+  resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.10.tgz#147d3a006da4ca3ce14728c7aefc287c367d7a6c"
+  integrity sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==
 
 handlebars@^4.7.6:
   version "4.7.7"
@@ -2630,12 +2659,12 @@ ignore-walk@^3.0.3:
   dependencies:
     minimatch "^3.0.4"
 
-ignore-walk@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/ignore-walk/-/ignore-walk-4.0.1.tgz#fc840e8346cf88a3a9380c5b17933cd8f4d39fa3"
-  integrity sha512-rzDQLaW4jQbh2YrOFlJdCtX8qgJTehFRYiUB2r1osqTeDzV/3+Jh8fz1oAPzUThf3iku8Ds4IDqawI5d8mUiQw==
+ignore-walk@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/ignore-walk/-/ignore-walk-5.0.1.tgz#5f199e23e1288f518d90358d461387788a154776"
+  integrity sha512-yemi4pMf51WKT7khInJqAvsIGzoqYXblnsz0ql8tM+yi1EKYTY1evX4NAbJrLL/Aanr2HyZeluqU+Oi7MGHokw==
   dependencies:
-    minimatch "^3.0.4"
+    minimatch "^5.0.1"
 
 ignore@^5.1.1, ignore@^5.1.4, ignore@^5.2.0:
   version "5.2.0"
@@ -3250,10 +3279,10 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
-lru-cache@^7.3.1, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.7.3"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.7.3.tgz#98cd19eef89ce6a4a3c4502c17c833888677c252"
-  integrity sha512-WY9wjJNQt9+PZilnLbuFKM+SwDull9+6IAguOrarOMoOHTcJ9GnXSO11+Gw6c7xtDkBkthR57OZMtZKYr+1CEw==
+lru-cache@^7.4.0, lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
+  version "7.8.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.0.tgz#649aaeb294a56297b5cbc5d70f198dcc5ebe5747"
+  integrity sha512-AmXqneQZL3KZMIgBpaPTeI6pfwh+xQ2vutMsyqOu1TBdEXFZgpG/80wuJ531w2ZN7TI0/oc8CPxzh/DKQudZqg==
 
 make-error@^1, make-error@^1.1.1:
   version "1.3.6"
@@ -3283,9 +3312,9 @@ make-fetch-happen@*, make-fetch-happen@^9.0.1:
     ssri "^8.0.0"
 
 make-fetch-happen@^10.0.3, make-fetch-happen@^10.0.6:
-  version "10.1.1"
-  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.1.1.tgz#d93e9241e580ebe0b2b7294b2d1b79ab4e5adfa4"
-  integrity sha512-3/mCljDQNjmrP7kl0vhS5WVlV+TvSKoZaFhdiYV7MOijEnrhrjaVnqbp/EY/7S+fhUB2KpH7j8c1iRsIOs+kjw==
+  version "10.1.2"
+  resolved "https://registry.yarnpkg.com/make-fetch-happen/-/make-fetch-happen-10.1.2.tgz#acffef43f86250602b932eecc0ad3acc992ae233"
+  integrity sha512-GWMGiZsKVeJACQGJ1P3Z+iNec7pLsU6YW1q11eaPn3RR8nRXHppFWfP7Eu0//55JK3hSjrAQRl8sDa5uXpq1Ew==
   dependencies:
     agentkeepalive "^4.2.1"
     cacache "^16.0.2"
@@ -3302,7 +3331,7 @@ make-fetch-happen@^10.0.3, make-fetch-happen@^10.0.6:
     negotiator "^0.6.3"
     promise-retry "^2.0.1"
     socks-proxy-agent "^6.1.1"
-    ssri "^8.0.1"
+    ssri "^9.0.0"
 
 map-obj@^1.0.0:
   version "1.0.1"
@@ -3734,6 +3763,13 @@ npm-install-checks@*, npm-install-checks@^4.0.0:
   dependencies:
     semver "^7.1.1"
 
+npm-install-checks@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/npm-install-checks/-/npm-install-checks-5.0.0.tgz#5ff27d209a4e3542b8ac6b0c1db6063506248234"
+  integrity sha512-65lUsMI8ztHCxFz5ckCEC44DRvEGdZX5usQFriauxHEwt7upv1FKaQEmAtU0YnOAdwuNWCmk64xYiQABNrEyLA==
+  dependencies:
+    semver "^7.1.1"
+
 npm-normalize-package-bin@^1.0.0, npm-normalize-package-bin@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/npm-normalize-package-bin/-/npm-normalize-package-bin-1.0.1.tgz"
@@ -3767,13 +3803,13 @@ npm-packlist@^2.1.4:
     npm-bundled "^1.1.1"
     npm-normalize-package-bin "^1.0.1"
 
-npm-packlist@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/npm-packlist/-/npm-packlist-4.0.0.tgz#ba54713f8ee2ad919a6dc9f1b9ec7aa291466703"
-  integrity sha512-gL6XC/iw9YSmqArmZOGSkyy+yIZf2f7uH0p4Vmxef/irn73vd9/rDkCtvm+a9rh/QK2xGYfCAMOghM06ymzC0A==
+npm-packlist@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/npm-packlist/-/npm-packlist-5.0.0.tgz#74795ebbbf91bd5a2db6ecff4d6fe1f1c1a07e11"
+  integrity sha512-uU20UwM4Hogfab1Q7htJbhcyafM9lGHxOrDjkKvR2S3z7Ds0uRaESk0cXctczk+ABT4DZWNwjB10xlurFdEwZg==
   dependencies:
     glob "^7.2.0"
-    ignore-walk "^4.0.1"
+    ignore-walk "^5.0.1"
     npm-bundled "^1.1.2"
     npm-normalize-package-bin "^1.0.1"
 
@@ -3788,11 +3824,11 @@ npm-pick-manifest@*, npm-pick-manifest@^6.0.0, npm-pick-manifest@^6.1.0, npm-pic
     semver "^7.3.4"
 
 npm-pick-manifest@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/npm-pick-manifest/-/npm-pick-manifest-7.0.0.tgz#e3b18b09678a47e894f90941bef8204ea5d96c3b"
-  integrity sha512-njM1AcdioFaKd0JSGtLO09YA1WRwctjGQJbnHGmKS+u+uwP8oFvtZtOQWPYdxrnY5eJud3wn8OpH4sEIx6+GEQ==
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/npm-pick-manifest/-/npm-pick-manifest-7.0.1.tgz#76dda30a7cd6b99be822217a935c2f5eacdaca4c"
+  integrity sha512-IA8+tuv8KujbsbLQvselW2XQgmXWS47t3CB0ZrzsRZ82DbDfkcFunOaPm4X7qNuhMfq+FmV7hQT4iFVpHqV7mg==
   dependencies:
-    npm-install-checks "^4.0.0"
+    npm-install-checks "^5.0.0"
     npm-normalize-package-bin "^1.0.1"
     npm-package-arg "^9.0.0"
     semver "^7.3.5"
@@ -4155,13 +4191,13 @@ pacote@*, pacote@^11.1.11, pacote@^11.2.6, pacote@^11.3.1, pacote@^11.3.4, pacot
     tar "^6.1.0"
 
 pacote@^13.0.3, pacote@^13.0.5:
-  version "13.0.5"
-  resolved "https://registry.yarnpkg.com/pacote/-/pacote-13.0.5.tgz#d6f370b11112492d8257ae1178a003b36d4bb261"
-  integrity sha512-6CYfot3/rUAn3qqzF2d/jrrXm5HlBtvaSgfmg0VtOUAdJ8fbSq21BJwftMGArkL71yXHIbUJ7Bt5B04547HELA==
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/pacote/-/pacote-13.1.1.tgz#d3e6e27ffc5137d2a07233ed6fba2a209ecb2b7b"
+  integrity sha512-MTT3k1OhUo+IpvoHGp25OwsRU0L+kJQM236OCywxvY4OIJ/YfloNW2/Yc3HMASH10BkfZaGMVK/pxybB7fWcLw==
   dependencies:
     "@npmcli/git" "^3.0.0"
     "@npmcli/installed-package-contents" "^1.0.7"
-    "@npmcli/promise-spawn" "^1.2.0"
+    "@npmcli/promise-spawn" "^3.0.0"
     "@npmcli/run-script" "^3.0.1"
     cacache "^16.0.0"
     chownr "^2.0.0"
@@ -4170,7 +4206,7 @@ pacote@^13.0.3, pacote@^13.0.5:
     minipass "^3.1.6"
     mkdirp "^1.0.4"
     npm-package-arg "^9.0.0"
-    npm-packlist "^4.0.0"
+    npm-packlist "^5.0.0"
     npm-pick-manifest "^7.0.0"
     npm-registry-fetch "^13.0.1"
     proc-log "^2.0.0"
@@ -4178,7 +4214,7 @@ pacote@^13.0.3, pacote@^13.0.5:
     read-package-json "^5.0.0"
     read-package-json-fast "^2.0.3"
     rimraf "^3.0.2"
-    ssri "^8.0.1"
+    ssri "^9.0.0"
     tar "^6.1.11"
 
 parent-module@^1.0.0:
@@ -4509,6 +4545,11 @@ read-cmd-shim@^2.0.0:
   resolved "https://registry.npmjs.org/read-cmd-shim/-/read-cmd-shim-2.0.0.tgz"
   integrity sha512-HJpV9bQpkl6KwjxlJcBoqu9Ba0PQg8TqSNIOrulGt54a0uup0HtevreFHzYzkm0lpnleRdNBzXznKrgxglEHQw==
 
+read-cmd-shim@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/read-cmd-shim/-/read-cmd-shim-3.0.0.tgz#62b8c638225c61e6cc607f8f4b779f3b8238f155"
+  integrity sha512-KQDVjGqhZk92PPNRj9ZEXEuqg8bUobSKRw+q0YQ3TKI5xkce7bUJobL4Z/OtiEbAAv70yEpYIXp4iQ9L8oPVog==
+
 read-package-json-fast@*, read-package-json-fast@^2.0.1, read-package-json-fast@^2.0.2, read-package-json-fast@^2.0.3:
   version "2.0.3"
   resolved "https://registry.npmjs.org/read-package-json-fast/-/read-package-json-fast-2.0.3.tgz"
@@ -4777,7 +4818,7 @@ semver-regex@^3.1.2:
   resolved "https://registry.npmjs.org/semver-regex/-/semver-regex-3.1.2.tgz"
   integrity sha512-bXWyL6EAKOJa81XG1OZ/Yyuq+oT0b2YLlxx7c+mrdYPaPbnj6WgVULXhinMIeZGufuUBu/eVRqXEhiv4imfwxA==
 
-semver@*, semver@7.3.5, semver@^7.0.0, semver@^7.1.1, semver@^7.1.2, semver@^7.1.3, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5:
+semver@*, semver@7.3.5, semver@^7.1.1, semver@^7.1.2, semver@^7.1.3, semver@^7.3.2, semver@^7.3.4, semver@^7.3.5:
   version "7.3.5"
   resolved "https://registry.npmjs.org/semver/-/semver-7.3.5.tgz"
   integrity sha512-PoeGJYh8HK4BTO/a9Tf6ZG3veo/A7ZVsYrSA6J8ny9nb3B1VrpkuN+z9OE5wfE5p6H4LchYZsegiQgbJD94ZFQ==
@@ -4793,6 +4834,13 @@ semver@^6.0.0, semver@^6.1.0, semver@^6.3.0:
   version "6.3.0"
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
+
+semver@^7.0.0:
+  version "7.3.6"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.6.tgz#5d73886fb9c0c6602e79440b97165c29581cbb2b"
+  integrity sha512-HZWqcgwLsjaX1HBD31msI/rXktuIhS+lWvdE4kN9z+8IVT4Itc7vqU2WvYsyD6/sjYCt4dEKH/m1M3dwI9CC5w==
+  dependencies:
+    lru-cache "^7.4.0"
 
 send@0.17.2:
   version "0.17.2"
@@ -5015,6 +5063,13 @@ ssri@*, ssri@^8.0.0, ssri@^8.0.1:
   version "8.0.1"
   resolved "https://registry.npmjs.org/ssri/-/ssri-8.0.1.tgz"
   integrity sha512-97qShzy1AiyxvPNIkLWoGua7xoQzzPjQ0HAH4B0rWKo7SZ6USuPcrUiAFrws0UH8RrbWmgq3LMTObhPIHbbBeQ==
+  dependencies:
+    minipass "^3.1.1"
+
+ssri@^9.0.0:
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/ssri/-/ssri-9.0.0.tgz#70ad90e339eb910f1a7ff1dcf4afc268326c4547"
+  integrity sha512-Y1Z6J8UYnexKFN1R/hxUaYoY2LVdKEzziPmVAFKiKX8fiwvCJTVzn/xYE9TEWod5OVyNfIHHuVfIEuBClL/uJQ==
   dependencies:
     minipass "^3.1.1"
 
@@ -5306,6 +5361,11 @@ treeverse@*, treeverse@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/treeverse/-/treeverse-1.0.4.tgz"
   integrity sha512-whw60l7r+8ZU8Tu/Uc2yxtc4ZTZbR/PF3u1IPNKGQ6p8EICLb3Z2lAgoqw9bqYd8IkgnsaOcLzYHFckjqNsf0g==
+
+treeverse@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/treeverse/-/treeverse-2.0.0.tgz#036dcef04bc3fd79a9b79a68d4da03e882d8a9ca"
+  integrity sha512-N5gJCkLu1aXccpOTtqV6ddSEi6ZmGkh3hjmbu1IjcavJK4qyOVQmi0myQKM7z5jVGmD68SJoliaVrMmVObhj6A==
 
 trim-newlines@^3.0.0:
   version "3.0.1"
