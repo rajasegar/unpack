@@ -239,13 +239,13 @@
     fastq "^1.6.0"
 
 "@npmcli/arborist@*":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.1.0.tgz#cccf66a23ca96b68da8660b07bef7cb5f4b7bebe"
-  integrity sha512-MMutHkOmGyLJTBGXeeZ7khANmjlJtuqHScDATXaxChHMLF6MhAlw2Cca4TXlbeJuq0X1s7wm6ODa/vnBS3DVAw==
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/arborist/-/arborist-5.1.1.tgz#668dbf9ebf48ec0bbf19a5b4b19013e8c51f35b0"
+  integrity sha512-qAlwjo95HuqYoOBJgg2dSZRQniHR+GxLdcIoEBQ1f79GFd1TFdIyqHtr77HBGsnGVqTpvBGD0A2vFbEJ9CwWlg==
   dependencies:
     "@isaacs/string-locale-compare" "^1.1.0"
     "@npmcli/installed-package-contents" "^1.0.7"
-    "@npmcli/map-workspaces" "^2.0.0"
+    "@npmcli/map-workspaces" "^2.0.3"
     "@npmcli/metavuln-calculator" "^3.0.1"
     "@npmcli/move-file" "^2.0.0"
     "@npmcli/name-from-folder" "^1.0.1"
@@ -253,7 +253,7 @@
     "@npmcli/package-json" "^2.0.0"
     "@npmcli/run-script" "^3.0.0"
     bin-links "^3.0.0"
-    cacache "^16.0.0"
+    cacache "^16.0.6"
     common-ancestor-path "^1.0.1"
     json-parse-even-better-errors "^2.3.1"
     json-stringify-nice "^1.1.4"
@@ -264,7 +264,7 @@
     npm-package-arg "^9.0.0"
     npm-pick-manifest "^7.0.0"
     npm-registry-fetch "^13.0.0"
-    npmlog "^6.0.1"
+    npmlog "^6.0.2"
     pacote "^13.0.5"
     parse-conflict-json "^2.0.1"
     proc-log "^2.0.0"
@@ -273,7 +273,7 @@
     read-package-json-fast "^2.0.2"
     readdir-scoped-modules "^1.1.0"
     rimraf "^3.0.2"
-    semver "^7.3.5"
+    semver "^7.3.7"
     ssri "^9.0.0"
     treeverse "^2.0.0"
     walk-up-path "^1.0.0"
@@ -402,7 +402,7 @@
     minimatch "^3.0.4"
     read-package-json-fast "^2.0.1"
 
-"@npmcli/map-workspaces@^2.0.0":
+"@npmcli/map-workspaces@^2.0.3":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@npmcli/map-workspaces/-/map-workspaces-2.0.3.tgz#2d3c75119ee53246e9aa75bc469a55281cd5f08f"
   integrity sha512-X6suAun5QyupNM8iHkNPh0AHdRC2rb1W+MTdMvvA/2ixgmqZwlq5cGUBgmKHUHT2LgrkKJMAXbfAoTxOigpK8Q==
@@ -1157,10 +1157,10 @@ cacache@*, cacache@^15.0.3, cacache@^15.0.5, cacache@^15.2.0:
     tar "^6.0.2"
     unique-filename "^1.1.1"
 
-cacache@^16.0.0, cacache@^16.0.2:
-  version "16.0.6"
-  resolved "https://registry.yarnpkg.com/cacache/-/cacache-16.0.6.tgz#3e4b1e8196673486e725a66eaa747a91da753963"
-  integrity sha512-9a/MLxGaw3LEGes0HaPez2RgZWDV6X0jrgChsuxfEh8xoDoYGxaGrkMe7Dlyjrb655tA/b8fX0qlUg6Ii5MBvw==
+cacache@^16.0.0, cacache@^16.0.2, cacache@^16.0.6:
+  version "16.0.7"
+  resolved "https://registry.yarnpkg.com/cacache/-/cacache-16.0.7.tgz#74a5d9bc4c17b4c0b373c1f5d42dadf5dc06638d"
+  integrity sha512-a4zfQpp5vm4Ipdvbj+ZrPonikRhm6WBEd4zT1Yc1DXsmAxrPgDwWBLF/u/wTVXSFPIgOJ1U3ghSa2Xm4s3h28w==
   dependencies:
     "@npmcli/fs" "^2.1.0"
     "@npmcli/move-file" "^2.0.0"
@@ -2623,10 +2623,10 @@ http-signature@~1.2.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-https-proxy-agent@5.0.0, https-proxy-agent@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.0.tgz"
-  integrity sha512-EkYm5BcKUGiduxzSt3Eppko+PiNWNEpa4ySk9vTC6wDsQJW9rHSa+UhGNJoRYp7bz6Ht1eaRIa6QaJqO5rCFbA==
+https-proxy-agent@5.0.1, https-proxy-agent@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz"
+  integrity sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==
   dependencies:
     agent-base "6"
     debug "4"
@@ -4008,7 +4008,7 @@ npmlog@^4.1.2:
     gauge "~2.7.3"
     set-blocking "~2.0.0"
 
-npmlog@^6.0.0, npmlog@^6.0.1:
+npmlog@^6.0.0, npmlog@^6.0.2:
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/npmlog/-/npmlog-6.0.2.tgz#c8166017a42f2dea92d6453168dd865186a70830"
   integrity sha512-/vBvz5Jfr9dT/aFWd0FIRf+T/Q2WBsLENygUaFUqstqsycmZAP/t5BvFJTK0viFmSUxiUKTUplWy5vt+rvKIxg==
@@ -4478,16 +4478,16 @@ punycode@^2.1.0, punycode@^2.1.1:
   resolved "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz"
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
-puppeteer@13.6.0:
-  version "13.6.0"
-  resolved "https://registry.npmjs.org/puppeteer/-/puppeteer-13.6.0.tgz"
-  integrity sha512-EJXhTyY5bXNPLFXPGcY9JaF6EKJIX8ll8cGG3WUK+553Jx96oDf1cB+lkFOro9p0X16tY+9xx7zYWl+vnWgW2g==
+puppeteer@13.7.0:
+  version "13.7.0"
+  resolved "https://registry.npmjs.org/puppeteer/-/puppeteer-13.7.0.tgz"
+  integrity sha512-U1uufzBjz3+PkpCxFrWzh4OrMIdIb2ztzCu0YEPfRHjHswcSwHZswnK+WdsOQJsRV8WeTg3jLhJR4D867+fjsA==
   dependencies:
     cross-fetch "3.1.5"
     debug "4.3.4"
     devtools-protocol "0.0.981744"
     extract-zip "2.0.1"
-    https-proxy-agent "5.0.0"
+    https-proxy-agent "5.0.1"
     pkg-dir "4.2.0"
     progress "2.0.3"
     proxy-from-env "1.1.0"
@@ -4857,7 +4857,7 @@ semver@^6.0.0, semver@^6.1.0, semver@^6.3.0:
   resolved "https://registry.npmjs.org/semver/-/semver-6.3.0.tgz"
   integrity sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==
 
-semver@^7.0.0:
+semver@^7.0.0, semver@^7.3.7:
   version "7.3.7"
   resolved "https://registry.yarnpkg.com/semver/-/semver-7.3.7.tgz#12c5b649afdbf9049707796e22a4028814ce523f"
   integrity sha512-QlYTucUYOews+WeEujDoEGziz4K6c47V/Bd+LjSSYcA94p+DmINdf7ncaUinThfvZyu13lN9OY1XDxt8C0Tw0g==

@@ -17,7 +17,7 @@ specifiers:
   npm-run-all: 4.1.5
   prettier: 2.6.2
   prompts: ^2.4.0
-  puppeteer: 13.6.0
+  puppeteer: 13.7.0
   qunit: 2.18.2
   semantic-release: ^18.0.0
   tmp: 0.2.1
@@ -43,7 +43,7 @@ devDependencies:
   husky: 7.0.4
   npm-run-all: 4.1.5
   prettier: 2.6.2
-  puppeteer: 13.6.0
+  puppeteer: 13.7.0
   qunit: 2.18.2
   tmp: 0.2.1
   walk-sync: 3.0.0
@@ -458,7 +458,7 @@ packages:
       fs-extra: 10.0.0
       globby: 11.0.4
       http-proxy-agent: 5.0.0
-      https-proxy-agent: 5.0.0
+      https-proxy-agent: 5.0.1
       issue-parser: 6.0.0
       lodash: 4.17.21
       mime: 2.5.2
@@ -1800,8 +1800,8 @@ packages:
       - supports-color
     dev: false
 
-  /https-proxy-agent/5.0.0:
-    resolution: {integrity: sha512-EkYm5BcKUGiduxzSt3Eppko+PiNWNEpa4ySk9vTC6wDsQJW9rHSa+UhGNJoRYp7bz6Ht1eaRIa6QaJqO5rCFbA==}
+  /https-proxy-agent/5.0.1:
+    resolution: {integrity: sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==}
     engines: {node: '>= 6'}
     dependencies:
       agent-base: 6.0.2
@@ -2793,8 +2793,8 @@ packages:
     engines: {node: '>=6'}
     dev: true
 
-  /puppeteer/13.6.0:
-    resolution: {integrity: sha512-EJXhTyY5bXNPLFXPGcY9JaF6EKJIX8ll8cGG3WUK+553Jx96oDf1cB+lkFOro9p0X16tY+9xx7zYWl+vnWgW2g==}
+  /puppeteer/13.7.0:
+    resolution: {integrity: sha512-U1uufzBjz3+PkpCxFrWzh4OrMIdIb2ztzCu0YEPfRHjHswcSwHZswnK+WdsOQJsRV8WeTg3jLhJR4D867+fjsA==}
     engines: {node: '>=10.18.1'}
     requiresBuild: true
     dependencies:
@@ -2802,7 +2802,7 @@ packages:
       debug: 4.3.4
       devtools-protocol: 0.0.981744
       extract-zip: 2.0.1
-      https-proxy-agent: 5.0.0
+      https-proxy-agent: 5.0.1
       pkg-dir: 4.2.0
       progress: 2.0.3
       proxy-from-env: 1.1.0
