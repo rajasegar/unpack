@@ -3078,9 +3078,9 @@ just-diff@^3.0.1:
   integrity sha512-sdMWKjRq8qWZEjDcVA6llnUT8RDEBIfOiGpYFPYa9u+2c39JCsejktSP7mj5eRid5EIvTzIpQ2kDOCw1Nq9BjQ==
 
 just-diff@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/just-diff/-/just-diff-5.0.1.tgz#db8fe1cfeea1156f2374bfb289826dca28e7e390"
-  integrity sha512-X00TokkRIDotUIf3EV4xUm6ELc/IkqhS/vPSHdWnsM5y0HoNMfEqrazizI7g78lpHvnRSRt/PFfKtRqJCOGIuQ==
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/just-diff/-/just-diff-5.0.2.tgz#68854c94280c37d28cb266d8f29bdd2cd29f003e"
+  integrity sha512-uGd6F+eIZ4T95EinP8ubINGkbEy3jrgBym+6LjW+ja1UG1WQIcEcQ6FLeyXtVJZglk+bj7fvEn+Cu2LBxkgiYQ==
 
 kind-of@^6.0.3:
   version "6.0.3"
@@ -3300,9 +3300,9 @@ lru-cache@^6.0.0:
     yallist "^4.0.0"
 
 lru-cache@^7.4.4, lru-cache@^7.5.1, lru-cache@^7.7.1:
-  version "7.8.1"
-  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.8.1.tgz#68ee3f4807a57d2ba185b7fd90827d5c21ce82bb"
-  integrity sha512-E1v547OCgJvbvevfjgK9sNKIVXO96NnsTsFPBlg4ZxjhsJSODoH9lk8Bm0OxvHNm6Vm5Yqkl/1fErDxhYL8Skg==
+  version "7.9.0"
+  resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-7.9.0.tgz#29c2a989b6c10f32ceccc66ff44059e1490af3e1"
+  integrity sha512-lkcNMUKqdJk96TuIXUidxaPuEg5sJo/+ZyVE2BDFnuZGzwXem7d8582eG8vbu4todLfT14snP6iHriCHXXi5Rw==
 
 make-error@^1, make-error@^1.1.1:
   version "1.3.6"
@@ -4528,10 +4528,10 @@ quick-lru@^4.0.1:
   resolved "https://registry.npmjs.org/quick-lru/-/quick-lru-4.0.1.tgz"
   integrity sha512-ARhCpm70fzdcvNQfPoy49IaanKkTlRWF2JMzqhcJbhSFRZv7nPTvZJdcY7301IPmvW+/p0RgIWnQDLJxifsQ7g==
 
-qunit@2.19.0:
-  version "2.19.0"
-  resolved "https://registry.npmjs.org/qunit/-/qunit-2.19.0.tgz"
-  integrity sha512-rC7U6j4EQkYedaccl9rYEMoHisvzM20XwXgy437Q0Apqav16iZQXSb/nglnFqI91J8P5ANXaljEY6VIT+LaSkg==
+qunit@2.19.1:
+  version "2.19.1"
+  resolved "https://registry.npmjs.org/qunit/-/qunit-2.19.1.tgz"
+  integrity sha512-gSGuw0vErE/rNjnlBW/JmE7NNubBlGrDPQvsug32ejYhcVFuZec9yoU0+C30+UgeCGwq6Ap89K65dMGo+kDGZQ==
   dependencies:
     commander "7.2.0"
     node-watch "0.7.3"
