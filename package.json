@@ -1,6 +1,6 @@
 {
   "name": "@rajasegar/unpack",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "description": "Create web apps without a bundler",
   "main": "index.js",
   "bin": {

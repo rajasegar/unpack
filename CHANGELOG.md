@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/rajasegar/unpack/compare/v1.8.3...v1.8.4) (2023-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update semantic-release monorepo ([a7f8a8d](https://github.com/rajasegar/unpack/commit/a7f8a8d50f1f13ca83c155a20c324078101b41cb))
+
 ## [1.8.3](https://github.com/rajasegar/unpack/compare/v1.8.2...v1.8.3) (2023-03-22)
 
 
