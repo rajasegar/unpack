@@ -8,7 +8,7 @@ specifiers:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0
   eslint-plugin-node: 11.1.0
-  eslint-plugin-prettier: 4.0.0
+  eslint-plugin-prettier: 4.2.1
   execa: 5.1.1
   express: 4.18.2
   get-port: 6.1.2
@@ -36,7 +36,7 @@ devDependencies:
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0_eslint@8.36.0
   eslint-plugin-node: 11.1.0_eslint@8.36.0
-  eslint-plugin-prettier: 4.0.0_5j56dw67ao333j5fijosopjxz4
+  eslint-plugin-prettier: 4.2.1_5j56dw67ao333j5fijosopjxz4
   execa: 5.1.1
   express: 4.18.2
   get-port: 6.1.2
@@ -1240,9 +1240,9 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prettier/4.0.0_5j56dw67ao333j5fijosopjxz4:
-    resolution: {integrity: sha512-98MqmCJ7vJodoQK359bqQWaxOE0CS8paAz/GgjaZLyex4TTk3g9HugoO89EqWCrFiOqn9EVvcoo7gZzONCWVwQ==}
-    engines: {node: '>=6.0.0'}
+  /eslint-plugin-prettier/4.2.1_5j56dw67ao333j5fijosopjxz4:
+    resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
+    engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: '>=7.28.0'
       eslint-config-prettier: '*'
