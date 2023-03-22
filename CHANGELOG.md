@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/rajasegar/unpack/compare/v1.8.2...v1.8.3) (2023-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency prompts to v2.4.2 ([beb5aa6](https://github.com/rajasegar/unpack/commit/beb5aa60a430a20f94d87b4c2b3ea9677be946ba))
+
 ## [1.8.2](https://github.com/rajasegar/unpack/compare/v1.8.1...v1.8.2) (2023-03-22)
 
 
