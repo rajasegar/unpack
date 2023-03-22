@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/rajasegar/unpack/compare/v1.8.1...v1.8.2) (2023-03-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency minimist to v1.2.8 ([0fe3537](https://github.com/rajasegar/unpack/commit/0fe353742ca66f24dde8410ffefa4f341baa486a))
+
 ## [1.8.1](https://github.com/rajasegar/unpack/compare/v1.8.0...v1.8.1) (2021-10-12)
 
 
