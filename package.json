@@ -50,7 +50,7 @@
     "prettier": "2.8.8",
     "puppeteer": "13.7.0",
     "qunit": "2.20.0",
-    "tmp": "0.2.1",
+    "tmp": "0.2.3",
     "walk-sync": "3.0.0"
   },
   "release": {
